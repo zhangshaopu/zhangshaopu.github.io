@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>pupupu</title>
+        <link>https://zhangshaopu.github.io/en-us/</link>
+        <description>Blog of ztygcs in English.</description>
+        <generator>Hugo 0.64.1 https://gohugo.io/</generator>
+        
+            <language>en-US</language>
+        
+        
+            <managingEditor>99432741@qq.com (zsp)</managingEditor>
+        
+        
+            <webMaster>99432741@qq.com (zsp)</webMaster>
+        
+        
+        <lastBuildDate>Thu, 13 Feb 2020 14:25:17 +0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/en-us/rss.xml" />
+        
+        
+    </channel>
+</rss>

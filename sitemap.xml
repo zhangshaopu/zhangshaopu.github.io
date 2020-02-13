@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://zhangshaopu.github.io/zh-cn/sitemap.xml</loc>
+		
+	   	<lastmod>2020-02-12T14:38:55+08:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://zhangshaopu.github.io/en-us/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>
