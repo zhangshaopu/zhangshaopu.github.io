@@ -19,32 +19,37 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/github/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/tags/git/</loc>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/github/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/categories/git/</loc>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/posts/github2/</loc>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/github/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:39:32+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -59,12 +64,12 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/tags/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/tech/</loc>
-    <lastmod>2020-02-12T14:38:55+08:00</lastmod>
+    <lastmod>2020-02-13T14:45:04+08:00</lastmod>
   </url>
   
   <url>
@@ -80,11 +85,6 @@
   <url>
     <loc>https://zhangshaopu.github.io/posts/emoji-support/</loc>
     <lastmod>2020-02-10T01:14:24+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhangshaopu.github.io/posts/github2/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
