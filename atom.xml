@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-15T00:19:46+08:00</updated>
+    <updated>2020-02-15T01:39:56+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -334,7 +334,7 @@ dpkg -r zip
             <title type="text">Git 操作</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/git%E6%93%8D%E4%BD%9C/" />
             <id>https://zhangshaopu.github.io/posts/git%E6%93%8D%E4%BD%9C/</id>
-            <updated>2020-02-14T23:33:01+08:00</updated>
+            <updated>2020-02-15T01:07:57+08:00</updated>
             <published>2020-02-09T20:56:07+08:00</published>
             
             
@@ -346,24 +346,26 @@ dpkg -r zip
 <p>查询分支</p>
 <h1 id="git-分支创建的合并">git 分支创建的合并</h1>
 <p>1、切换到基础分支，如主干</p>
-<p>git checkout master</p>
-<p>2、创建并切换到新分支</p>
-<p>git checkout -b panda</p>
-<p>git branch可以看到已经在panda分支上</p>
+<pre><code>git checkout master
+</code></pre><p>2、创建并切换到新分支</p>
+<pre><code>git checkout -b panda
+</code></pre><p>git branch可以看到已经在panda分支上</p>
 <p>3、更新分支代码并提交</p>
-<p>git add *</p>
-<p>git commit -m &quot;&quot;
-4、push 到远程分支panda/origin
-git push origin origin 
-git push origin panda</p>
-<p>5.将某一分支合并到master分支
+<pre><code>git add *
+
+git commit -m &quot;&quot;
+</code></pre><p>4、push 到远程分支panda/origin</p>
+<pre><code>git push origin origin 
+git push origin panda
+</code></pre><p>5.将某一分支合并到master分支
 1、切换到master ：git  checkout master
 2、如果是多人开发的话 需要把远程master上的代码pull下来： git pull origin master
 3、git  merge 分支名
 4、git push</p>
-<p>6、 更新远程分支列表
-git remote update origin --prune</p>
-<h1 id="git-add-和-git-add--a区别">git add .和 git add -A区别</h1>
+<p>6、 更新远程分支列表</p>
+<pre><code>git remote update origin --prune
+
+</code></pre><h1 id="git-add-和-git-add--a区别">git add .和 git add -A区别</h1>
 <p>git add . ：他会监控&lt;工作区的状态树&gt;，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</p>
 <p>git add -u ：他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u &lt;不会提交新文件&gt;（untracked file）。（git add --update的缩写）</p>
 <p>git add -A ：是上面两个功能的合集（git add --all的缩写）</p>
@@ -535,12 +537,15 @@ git config --global --unset https.proxy
             <title type="text">Markdown Syntax Guide</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/markdown-syntax/" />
             <id>https://zhangshaopu.github.io/posts/markdown-syntax/</id>
-            <updated>2020-02-14T23:16:50+08:00</updated>
+            <updated>2020-02-15T01:36:15+08:00</updated>
             <published>2019-03-11T00:00:00+00:00</published>
             
-            <summary type="html"><![CDATA[This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.]]></summary>
             
-                <content type="html"><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+    
+    <summary type="html"><![CDATA[This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme. ……]]></summary>
+            
+                <content type="html"><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+<img src="/images/hero-2.jpg" alt="asdf"></p>
 <h2 id="headings">Headings</h2>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>
@@ -687,7 +692,42 @@ git config --global --unset https.proxy
 <p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
 <p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
 <p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
-<section class="footnotes" role="doc-endnotes">
+<h2 id="图片">图片</h2>
+<p><img src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg" alt="图片描述"></p>
+<h2 id="markdown嵌套视频">Markdown嵌套视频</h2>
+<video id="video" controls="" preload="none" poster="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg">
+      <source id="mp4" src="http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4" type="video/mp4">
+      </video>
+<pre><code>&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.jpg&quot;&gt;
+      &lt;source id=&quot;mp4&quot; src=&quot;http://img.blog.fandong.me/2017-08-26-Markdown-Advance-Video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+      &lt;/video&gt;
+</code></pre><h2 id="嵌套bilibili视频">嵌套bilibili视频</h2>
+<iframe height="400" width="600" src="//player.bilibili.com/player.html?aid=54774652&cid=95807300&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<pre><code>&lt;iframe height=&quot;400&quot; width=&quot;600&quot; src=&quot;//player.bilibili.com/player.html?aid=54774652&amp;cid=95807300&amp;page=1&quot; scrolling=&quot;no&quot; border=&quot;0&quot; frameborder=&quot;no&quot; framespacing=&quot;0&quot; allowfullscreen=&quot;true&quot;&gt; &lt;/iframe&gt;
+</code></pre><h2 id="markdown嵌套音频">Markdown嵌套音频</h2>
+<audio id="audio" controls="" preload="none">
+      <source id="mp3" src="http://qiniu.cloud.fandong.me/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3">
+      </audio>
+<pre><code>&lt;audio id=&quot;audio&quot; controls=&quot;&quot; preload=&quot;none&quot;&gt;
+      &lt;source id=&quot;mp3&quot; src=&quot;http://qiniu.cloud.fandong.me/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3&quot;&gt;
+      &lt;/audio&gt;
+</code></pre><h2 id="想在别的地方让别人给你的仓库star的美好方式">想在别的地方让别人给你的仓库Star的美好方式</h2>
+<iframe
+    style="margin-left: 2px; margin-bottom:-5px;"
+    frameborder="0" scrolling="0" width="100px" height="20px"
+    src="https://ghbtns.com/github-btn.html?user=fandongtongxue&repo=fandongtongxue.github.io&type=star&count=true" >
+</iframe>
+<p>参数	 必传	 类型	   备注
+user	true	String	用户名
+repo	true	String	仓库名字
+type	true	String	star
+count	true	String	数量</p>
+<pre><code>&lt;iframe
+  style=&quot;margin-left: 2px; margin-bottom:-5px;&quot;
+  frameborder=&quot;0&quot; scrolling=&quot;0&quot; width=&quot;100px&quot; height=&quot;20px&quot;
+  src=&quot;https://ghbtns.com/github-btn.html?user=fandongtongxue&amp;repo=fandongtongxue.github.io&amp;type=star&amp;count=true&quot; &gt;
+&lt;/iframe&gt;
+</code></pre><section class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
