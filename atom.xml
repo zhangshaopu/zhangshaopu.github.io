@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-15T15:52:42+08:00</updated>
+    <updated>2020-02-16T00:50:42+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -25,7 +25,7 @@
             
             
     
-    <summary type="html"><![CDATA[一、查看git远程仓库地址 git remote -v 需要添加则 git remote add <origin(名字)>……]]></summary>
+    <summary type="html"><![CDATA[一、查看git远程仓库地址 git remote -v 需要添加则 git remote add <origin(名字)> <url> 需要改则先删除 git remote rm origin 二……]]></summary>
             
                 <content type="html"><![CDATA[<h2 id="一查看git远程仓库地址">一、查看git远程仓库地址</h2>
 <pre><code>git remote -v
@@ -139,7 +139,7 @@ $git branch -d temp  删除temp
                     </author>
             
     
-    <summary type="html"><![CDATA[2020.2.14高数笔记 对数的理解： 例如logaN,值为以a为底N的对数（即以a为……]]></summary>
+    <summary type="html"><![CDATA[2020.2.14高数笔记 对数的理解： 例如logaN,值为以a为底N的对数（即以a为底的阶数） ln为自然对数，……]]></summary>
             
                 <content type="html"><![CDATA[<h1 id="2020214高数笔记">2020.2.14高数笔记</h1>
 <h2 id="对数的理解">对数的理解：</h2>
@@ -206,7 +206,7 @@ $git branch -d temp  删除temp
             
             
     
-    <summary type="html"><![CDATA[命令行软件包管理 一、APT 针对DPKG来说，它只能安装一个deb格式的包，同时会通知……]]></summary>
+    <summary type="html"><![CDATA[命令行软件包管理 一、APT 针对DPKG来说，它只能安装一个deb格式的包，同时会通知你安装这个包需要什么样的依……]]></summary>
             
                 <content type="html"><![CDATA[<h1 id="命令行软件包管理">命令行软件包管理</h1>
 <h2 id="一apt"> 一、APT</h2>
@@ -337,7 +337,7 @@ dpkg -r zip
             
             
     
-    <summary type="html"><![CDATA[需要找出一个等式的是否大于或者小于一个数时，不要忘记用基本不等式 看到根号式子，可以尝……]]></summary>
+    <summary type="html"><![CDATA[需要找出一个等式的是否大于或者小于一个数时，不要忘记用基本不等式 看到根号式子，可以尝试有理化 看到分式，可以尝试……]]></summary>
             
                 <content type="html"><![CDATA[<ul>
 <li>
@@ -395,7 +395,7 @@ dpkg -r zip
             
             
     
-    <summary type="html"><![CDATA[对于夹逼定理求两边表达式方法： an<=bn<=cn 等号的意思为n趋于无穷的时候极限的大小比较 使两边分子……]]></summary>
+    <summary type="html"><![CDATA[对于夹逼定理求两边表达式方法： an<=bn<=cn 等号的意思为n趋于无穷的时候极限的大小比较 使两边分子分母的阶数与中间项相同，比……]]></summary>
             
                 <content type="html"><![CDATA[<h2 id="对于夹逼定理求两边表达式方法">对于夹逼定理求两边表达式方法：</h2>
 <ol>
@@ -451,7 +451,7 @@ dpkg -r zip
             
             
     
-    <summary type="html"><![CDATA[git rm 与 rm q的区别 git branch -a 查询分支 git 分支创建的合并 1、切换到基础分支，如主干 git checkout master 2、创……]]></summary>
+    <summary type="html"><![CDATA[git rm 与 rm q的区别 git branch -a 查询分支 git 分支创建的合并 1、切换到基础分支，如主干 git checkout master 2、创建并切换到新分支 git checkout -b panda git……]]></summary>
             
                 <content type="html"><![CDATA[<h1 id="git-rm-与-rm-q的区别">git rm 与 rm q的区别</h1>
 <h1 id="git-branch--a">git branch -a</h1>
