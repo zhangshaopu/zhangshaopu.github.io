@@ -21,10 +21,65 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sun, 16 Feb 2020 00:50:42 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 16 Feb 2020 01:12:51 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>基于pytorch的单样本学习和孪生网络图像识别</title>
+                <link>https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</guid>
+                <pubDate>Sun, 16 Feb 2020 01:05:30 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="实验分析">实验分析：</h2>
+<p>传统观点一般认为深度神经网络通常比较擅长从高维数据中学习，例如图像或者语言，但这是建立在它们有大量标记的样本来训练的情况下。然而，人类却拥有单样本学习的能力———如果你找一个从来没有见过苹果的小朋友，给它们一张苹果的图片，他们应该就能很成功的将它从其他水果里面鉴别出来，而不需要用很多种类的水果学习。传统的深度学习需要大量的数据作为代价，而单样本学习则不需要。</p>
+<h2 id="实验内容">实验内容：</h2>
+<h2 id="孪生网络siamese-networks">孪生网络（Siamese Networks）：</h2>
+<p>孪生网络是一中特殊的神经网络结构类型，相比较于经典模型用于学习如何对输入进行分类，孪生网络则是学习如何区分一个输入对的区别和相同之处。</p>
+<h2 id="网络结构">网络结构：</h2>
+<p>孪生网络包含两个完全相同的神经网络，每个网络接受一个输入图像，网络的最后一层反馈给一个对比损失函数，该函数计算两个图像的相似度。两个孪生网络参数相同。我们使用标准的卷积神经网络结构，具有三层卷积层和三层全连接层，在每个卷积层之后使用batch normalisation后进行drop out.</p>
+<p><img src="/images/pic1.png" alt="asdf">
+代码:todo...</p>
+<h2 id="对比损失函数">对比损失函数：</h2>
+<p>孪生体系结构的目标不是对输入图像进行分类，而是对其进行区分，因此分类损失函数不是最佳拟合函数。对比损失函数如下：</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/deepleaning/">deepleaning</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/pytorch/">pytorch</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/pytorch/">pytorch</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Git更新本地库</title>
