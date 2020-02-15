@@ -21,10 +21,119 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sat, 15 Feb 2020 01:39:56 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 15 Feb 2020 15:52:42 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Git更新本地库</title>
+                <link>https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</guid>
+                <pubDate>Sat, 15 Feb 2020 13:59:37 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="一查看git远程仓库地址">一、查看git远程仓库地址</h2>
+<pre><code>git remote -v
+需要添加则 git remote add &lt;origin(名字)&gt; &lt;url&gt;
+需要改则先删除  git remote rm origin
+
+</code></pre><h2 id="二更新本地库代码的两种方式">二、更新本地库代码的两种方式</h2>
+<ol>
+<li>法一</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">$git fetch origin master  从远程的origin仓库的master分支下载代码到本地的origin master
+ 
+$git log -p master.. origin/master  比较本地的仓库和远程参考的区别
+ 
+$git merge origin/master  把远程下载下来的代码合并到本地仓库，远程的和本地的合并
+</code></pre></td></tr></table>
+</div>
+</div><p>错误如下：</p>
+<p>fatal: refusing to merge unrelated histories
+（拒绝合并不相关的历史）</p>
+<p>可以在pull命令后紧接着使用--allow-unrelated-history选项来解决问题</p>
+<ol start="2">
+<li>法二</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-html" data-lang="html">$git fetch origin master:temp  从远程的origin仓库的master分支下载到本地并新建一个分支temp
+ 
+$git diff temp  比较master分支和temp分支的不同
+ 
+$git merge temp  合并temp分支到master分支
+ 
+$git branch -d temp  删除temp
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="版本回退">版本回退</h2>
+<ol>
+<li>命令显示从最近到最远的提交日志</li>
+</ol>
+<pre><code>git log
+</code></pre><ol start="2">
+<li>回退</li>
+</ol>
+<pre><code>git reset --hard &lt;版本号&gt;（只需要前面4位，git自己补全）
+</code></pre><h2 id="忽略文件">忽略文件</h2>
+<ul>
+<li>当不想git push上去的某些文件可以卸载忽略文件中</li>
+</ul>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/git/">git</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/git/">git</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>2020.2.14高数笔记</title>
