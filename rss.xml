@@ -21,10 +21,51 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sun, 16 Feb 2020 01:12:51 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 16 Feb 2020 20:23:25 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>2020.2.14高数笔记</title>
+                <link>https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
+                <pubDate>Sun, 16 Feb 2020 18:28:08 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="对于有界性的理解">对于有界性的理解</h2>
+<p>数列、函数的</p>
+<ul>
+<li>有界分为：收敛和不收敛(上下跳动)两种情况</li>
+<li>无界分为：无穷大、（不包括无穷小) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>无穷小时极限中的概念,无穷小可以从两个方向去理解</p>
+<ul>
+<li>当从0的左侧趋向无穷小时就是一个无限趋近0的负数,但是永远不能等于0；</li>
+<li>当从0的右侧趋向无穷小时就是一个无限趋近0的正数,但是永远不能等于0；
+所以这样看,无穷小有可能是负数.</li>
+</ul>
+ <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
+</ol>
+</section>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>基于pytorch的单样本学习和孪生网络图像识别</title>
@@ -696,7 +737,7 @@ git config --global --unset https.proxy
                 
                 
                     <description><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<img src="/images/hero-2.jpg" alt="asdf"></p>
+<img src="/images/hero-2.jpg" alt="" title="说明文字"></p>
 <h2 id="headings">Headings</h2>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>

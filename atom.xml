@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-16T01:12:51+08:00</updated>
+    <updated>2020-02-16T20:23:25+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -16,6 +16,50 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.64.1">Hugo</generator>
+        <entry>
+            <title type="text">2020.2.14高数笔记</title>
+            <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/" />
+            <id>https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</id>
+            <updated>2020-02-16T19:59:44+08:00</updated>
+            <published>2020-02-16T18:28:08+08:00</published>
+            
+            
+    
+    <summary type="html"><![CDATA[对于有界性的理解 数列、函数的 有界分为：收敛和不收敛(上下跳动)两种情况 无界分为：无穷大、（不包括无穷小) 1 无穷……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="对于有界性的理解">对于有界性的理解</h2>
+<p>数列、函数的</p>
+<ul>
+<li>有界分为：收敛和不收敛(上下跳动)两种情况</li>
+<li>无界分为：无穷大、（不包括无穷小) <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>无穷小时极限中的概念,无穷小可以从两个方向去理解</p>
+<ul>
+<li>当从0的左侧趋向无穷小时就是一个无限趋近0的负数,但是永远不能等于0；</li>
+<li>当从0的右侧趋向无穷小时就是一个无限趋近0的正数,但是永远不能等于0；
+所以这样看,无穷小有可能是负数.</li>
+</ul>
+ <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></li>
+</ol>
+</section>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">基于pytorch的单样本学习和孪生网络图像识别</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/" />
@@ -707,7 +751,7 @@ git config --global --unset https.proxy
             <title type="text">Markdown Syntax Guide</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/markdown-syntax/" />
             <id>https://zhangshaopu.github.io/posts/markdown-syntax/</id>
-            <updated>2020-02-15T01:36:15+08:00</updated>
+            <updated>2020-02-16T20:12:03+08:00</updated>
             <published>2019-03-11T00:00:00+00:00</published>
             
             
@@ -715,7 +759,7 @@ git config --global --unset https.proxy
     <summary type="html"><![CDATA[This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme. ……]]></summary>
             
                 <content type="html"><![CDATA[<p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
-<img src="/images/hero-2.jpg" alt="asdf"></p>
+<img src="/images/hero-2.jpg" alt="" title="说明文字"></p>
 <h2 id="headings">Headings</h2>
 <p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
 <h1 id="h1">H1</h1>
