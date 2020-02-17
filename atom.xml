@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-18T00:45:23+08:00</updated>
+    <updated>2020-02-18T02:29:43+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -16,6 +16,54 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.64.1">Hugo</generator>
+        <entry>
+            <title type="text">2.17高数笔记</title>
+            <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/" />
+            <id>https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</id>
+            <updated>2020-02-18T02:29:31+08:00</updated>
+            <published>2020-02-17T21:55:26+08:00</published>
+            
+            
+    
+    <summary type="html"><![CDATA[对求极限时什么时候可以代数的思考 代入的原理： 根据函数连续的定义，当fx在x->x0时,极限等于这一点在函……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="对求极限时什么时候可以代数的思考">对求极限时什么时候可以代数的思考</h2>
+<h3 id="代入的原理">代入的原理：</h3>
+<p>根据函数连续的定义，当fx在x-&gt;x0时,极限等于这一点在函数的值。</p>
+<p>上述定理就是很多式子可以直接代入的原理。</p>
+<h3 id="是否可以部分代入">是否可以部分代入？</h3>
+<p>首先要把整个式子化为乘积形式，其中有的因式可以代入，有的因式不可代入。【注：一定要先把整个式子化为乘积形式，否则下述讨论不成立！！！】</p>
+<ol>
+<li>如果某个因式的极限为非零常数，该因式可以代入。.这一步可以反复进行，直至不能继续。</li>
+<li>如果所有因式的极限均为非零常数或无穷大，所有因式均可以代入，最终结果为非零常数或无穷大；如果所有因式的极限均为常数，所有因式均可以代入，最终结果为常数。</li>
+<li>如果因式a的极限为0，因式b的极限为无穷大，则a和b构成<strong>未定式</strong>，a和b不可代入。</li>
+<li>如果某个因式震荡不收敛，显然不可代入。</li>
+</ol>
+<h3 id="未定式">未定式</h3>
+<p>$$
+\frac{0}{0} ,
+\frac{\infty}{\infty} ,
+0{\times}{\infty}
+$$
+指数未定型
+$$
+1^{\infty},0^0,{\infty}^0
+$$</p>
+<p>摘自:https://zhuanlan.zhihu.com/p/96000422</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">ubantu包管理工具</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/" />
