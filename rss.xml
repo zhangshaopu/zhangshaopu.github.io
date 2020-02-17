@@ -21,10 +21,145 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sun, 16 Feb 2020 20:23:25 +0800</lastBuildDate>
+        <lastBuildDate>Tue, 18 Feb 2020 00:45:23 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>ubantu包管理工具</title>
+                <link>https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
+                <pubDate>Mon, 17 Feb 2020 15:36:27 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="apt-安装需要sudo即root权限">apt 安装需要sudo，即root权限</h2>
+<p>sudo apt-get update 更新源</p>
+<blockquote>
+<p>要想使用apt-get下载安装软件，需要去/etc/apt/source/list中的镜像源地址中去下载，那么我们仅仅是知道去哪里下载，镜像源地址中有什么软件，我们并不清楚，所以需要使用apt-get update来刷新软件的索引，从而确定我们要的软件在镜像站点中是否存在。
+apt-get update会扫描每个镜像站点，并为该站点所具有的软件包资源建立索引文件，存放在本地的/var/lib/apt/list中。在使用apt-get命令执行安装或者更新操作时都会依赖这些索引文件，所以在每次更新或者安装前应该使用apt-get update命令来刷新索引，从而获取最新的软件资源。</p>
+</blockquote>
+<pre><code>sudo apt-get install package 安装包 下载的软件都会存到/var/cache/apt/archives下
+
+sudo apt-get remove package 删除包
+
+sudo apt-cache search package 搜索软件包
+
+sudo apt-cache show package 获取包的相关信息，如说明 大小 版本等
+
+sudo apt-get install package --reinstall 重新安装包
+
+sudo apt-get -f install 修复安装
+
+sudo apt-get remove package --purge 删除包，包括配置文件等
+
+sudo apt-get build-dep package 安装相关的编译环境
+
+sudo apt-get upgrade 更新已安装的包
+&gt;将系统中所有的软件包一次性升级到最新版本。
+
+sudo apt-cache depends package 了解使用该包依赖那些包
+
+sudo apt-cache rdepends package 查看该包被那些包依赖
+
+sudo apt-get source package 下载包的源代码
+</code></pre><h2 id="deb软件包安装">deb软件包安装</h2>
+<p>sudo dpkg -i xxx.deb</p>
+<h2 id="修改apt源地址">修改apt源地址</h2>
+<p>国内镜像为：https://mirrors.tuna.tsinghua.edu.cn/</p>
+<pre><code>进入 cd /etc/apt
+
+备份一份 cp /etc/apt/sourcs.list /etc/apt/sources.list.backup
+
+切换为root用户将sources.list清空
+
+su root 切换root用户
+
+echo ' ' &gt; sources.list 清空
+
+vim sources.list 复制镜像拷贝到该文件
+
+更新源 sudo apt-get update
+</code></pre><h2 id="几种执行文件的运行方式">几种执行文件的运行方式</h2>
+<ol>
+<li>AppImage文件的运行：</li>
+</ol>
+<blockquote>
+<p>AppImage的核心思想是一个应用程序 = 一个文件 。每个AppImage都包含应用程序以及应用程序运行所需的所有文件。换句话说，除了操作系统本身的基础组件，Appimage不需要依赖包即可运行。让所有常见发行版的用户运行它, 一次打包，到处运行。 覆盖所有主流桌面系统</p>
+</blockquote>
+<pre><code>chmod a+x xxx.AppImage //添加可执行权限
+./xxx.AppImage  //运行
+</code></pre><blockquote>
+<p>chmod是权限管理命令change the permissions mode of a file的缩写
+chmod a+x xxx.AppImage 就表示对当前目录下的xxx文件的所有者增加可执行权限
+u 代表用户
+x代表执行权限
+g 代表用户组.
+o 代表其他.
+a 代表所有.</p>
+</blockquote>
+<ul>
+<li>表示增加权限</li>
+</ul>
+<h2 id="解压文件以安装">解压文件以安装</h2>
+<p>unzip命令  语法：unzip ［选项］ 压缩文件名.zip</p>
+<p>各选项的含义分别为 :</p>
+<pre><code>-x 文件列表 解压缩文件，但不包括指定的file文件。
+
+-v 查看压缩文件目录，但不解压。
+
+-t 测试文件有无损坏，但不解压。
+
+-d 目录 把压缩文件解到指定目录下。
+
+-z 只显示压缩文件的注解。
+
+-n 不覆盖已经存在的文件。
+
+-o 覆盖已存在的文件且不要求用户确认。
+
+-j 不重建文档的目录结构，把所有文件解压到同一目录下。
+</code></pre><h2 id="tarxz文件解压方式">tar.xz文件解压方式</h2>
+<pre><code>首先打包成tar文件
+xz -d xxx.tar.xz
+接着用
+tar -xvf xxx.tar
+</code></pre>]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/ubantu/">ubantu</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/ubantu/">ubantu</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>2020.2.14高数笔记</title>
@@ -304,13 +439,12 @@ $git branch -d temp  删除temp
                 
                 
                     <description><![CDATA[<h1 id="命令行软件包管理">命令行软件包管理</h1>
-<h2 id="一apt"> 一、APT</h2>
+<h2 id="apt"> APT</h2>
 <blockquote>
 <p>针对DPKG来说，它只能安装一个deb格式的包，同时会通知你安装这个包需要什么样的依赖，但是不会安装那些依赖文件，同时也对这个包进行配置，因为那些依赖包并没有下载安装。
 APT（或者是APT-GET) 是一个包管理系统(Package Management System) 。它不仅可以安装包本身，也可以将对应的依赖下载安装，并且配置他们。</p>
 </blockquote>
-<pre><code>APT (Advanced Package Tool,高级软件包工具) 是一个强大的包管理系统，而那些图形化程序如 添加/删除 应用程序 和 Synaptic 都是建立在它的基础之上的。APT 自动处理依赖关系并在系统软件包执行其他操作以便安装所要的软件包。 运行 APT 要求管理权限 (参见 第1.3.3节 ― root 用户和 sudo 命令)。 
-</code></pre>
+<p>APT (Advanced Package Tool,高级软件包工具) 是一个强大的包管理系统，而那些图形化程序如 添加/删除 应用程序 和 Synaptic 都是建立在它的基础之上的。APT 自动处理依赖关系并在系统软件包执行其他操作以便安装所要的软件包。 运行 APT 要求管理权限 (参见 第1.3.3节 ― root 用户和 sudo 命令)。</p>
 <ul>
 <li>可以被 APT 使用的一些常用命令：</li>
 </ul>
@@ -327,7 +461,7 @@ sudo apt-get upgrade</li>
 apt-get help
 有关 APT 用法的更多信息，请阅读全面的 Debian APT 用户手册。</li>
 </ol>
-<h2 id="二使用-aptoncd-来安装软件包">二、使用 APTonCD 来安装软件包</h2>
+<h2 id="使用-aptoncd-来安装软件包">使用 APTonCD 来安装软件包</h2>
 <blockquote>
 <p>APTonCD可用来制作包含有您系统上所有软件包的CD，也可以制作包含的您选择的软件包或软件仓库的CD。在软件包管理器比如新立得中，找到aptoncd软件包并安装它。
 更多有关 APTonCD 的文档可以在它的网站找到， aptoncd.sourceforge.net</p>
@@ -336,7 +470,7 @@ apt-get help
 <li>安装单个软件包文件</li>
 </ul>
 <p>安装程序的首选方式是通过本章所介绍的软件包管理器。然而，虽然 Ubuntu 软件包库非常大，但也有可能您想要安装的软件包并不在 Ubuntu 库中。如果这样的话，您也可以从网站下载并安装文件。 在您安装文件之前确认您所下载的文件来自一个安全的源是重要的。 有许多不同类型的 Linux 软件包文件。它们多数与特定 Linux 发行版的软件管理器相关联。如 Debian 软件包 文件 (.deb 文件)、Redhat 软件包管理器 文件 (.rpm 文件) 和 Tarballs (.tar 文件)。 本部分内容将介绍如何安装这些单个文件。 无法保证这些文件将与您系统兼容，如果您安装这些文件的话，您也将无法得到安全更新。有鉴于此，如果您想安装程序的话，请尽可能通过软件包管理器来安装由 Ubuntu 自身提供的应用程序软件包。</p>
-<h2 id="三安装卸载-deb-文件">三、 安装/卸载 .deb 文件</h2>
+<h2 id="安装卸载-deb-文件">安装/卸载 .deb 文件</h2>
 <ul>
 <li>这些是Debian 软件包。这些与 Ubuntu 相关的软件包文件使用 .deb 后缀是因为 Ubuntu 与 Debian GNU/Linux 发行版有着紧密的关系。您将需要管理权限来安装 .deb 文件 (参见 第1.3.3节 ― root 用户和 sudo 命令)。</li>
 <li>要安装 .deb 文件，简单地双击它，然后选择 安装软件包 即可。或者，您也可以打开一个终端并输入：
@@ -344,29 +478,28 @@ sudo dpkg -i package_file.deb 来安装 .deb 文件。
 如需卸载 .deb 文件，在您软件包管理器中反选它，或输入：
 sudo dpkg -r package_name</li>
 </ul>
-<h2 id="四将-rpm-文件转为-deb-文件">四、 将 .rpm 文件转为 .deb 文件</h2>
-<pre><code>另一种软件包文件是 .rpm为后缀的 Red Hat 软件包管理器文件。我们并不建议在 Ubuntu 系统中安装它们。在绝大多数情况下，Ubuntu 自身的 .deb 软件包是可用的。然而，如果绝对必要，可以使用程序 alien 将 .rpm 文件转化为.deb 文件。
-</code></pre>
-<p>安装 alien 程序 (2 ― 添加、删除和更新应用程序)。
+<h2 id="将-rpm-文件转为-deb-文件">将 .rpm 文件转为 .deb 文件</h2>
+<p>另一种软件包文件是 .rpm为后缀的 Red Hat 软件包管理器文件。我们并不建议在 Ubuntu 系统中安装它们。在绝大多数情况下，Ubuntu 自身的 .deb 软件包是可用的。然而，如果绝对必要，可以使用程序 alien 将 .rpm 文件转化为.deb 文件。
+安装 alien 程序 (2 ― 添加、删除和更新应用程序)。
 在终端使用管理权限运行以下命令：
 sudo alien package_file.rpm</p>
-<h2 id="253安装-tarballs">2.5.3. 安装 tarballs</h2>
-<pre><code>以 .tar.gz 或 .tar.bz2 作为后缀名的文件是在 Linux 和 Unix 中被广泛使用的 tarballs 的打包文件。 如果在任何 Ubuntu 软件库中都没有 Ubuntu 的软件包，您可以按照软件包自带的指示使用命令行来安装和卸载 Tarball 文件。 Tarballs 通常包括程序的源代码，并且需要 编译 才能使用。要做到这一点，一般需要其它软件 (参见 第3.8.1节 ― 基本编译器)。
-</code></pre>
-<h1 id="dpkg命令">dpkg命令</h1>
-<p>dpkg常见用法： man dpkg
+<h2 id="安装-tarballs">安装 tarballs</h2>
+<p>以 .tar.gz 或 .tar.bz2 作为后缀名的文件是在 Linux 和 Unix 中被广泛使用的 tarballs 的打包文件。 如果在任何 Ubuntu 软件库中都没有 Ubuntu 的软件包，您可以按照软件包自带的指示使用命令行来安装和卸载 Tarball 文件。 Tarballs 通常包括程序的源代码，并且需要 编译 才能使用。要做到这一点，一般需要其它软件 (参见 第3.8.1节 ― 基本编译器)。</p>
+<h2 id="dpkg命令">dpkg命令</h2>
+<pre><code>dpkg常见用法： man dpkg
 dpkg -i package.deb 安装包
 dpkg -r package 删除包，不建议，不自动卸载依赖于它的包
 dpkg -P package 删除包（包括配置文件）
 dpkg -l 列出当前已安装的包，类似rpm -qa
 dpkg -l package 显示该包的简要说明，类似rpm –qi
 dpkg -L package 列出该包中所包含的文件，类似rpm –ql
-dpkg -S &lt; pattern&gt; 搜索包含pattern的包，类似rpm –qf
+dpkg -S \&lt; pattern\&gt; 搜索包含pattern的包，类似rpm –qf
 dpkg -s package 列出该包的状态，包括详细信息，类似rpm –qi
 dpkg --configure package 配置包，-a 使用，配置所有没有配置的软件包
 dpkg -c package.deb 列出 deb 包的内容，类似rpm –qpl
-dpkg --unpack package.deb 解开 deb 包的内容</p>
-<p>dpkg示例：
+dpkg --unpack package.deb 解开 deb 包的内容
+
+dpkg示例：
 列出系统上安装的所有软件包
 dpkg -l
 列出软件包安装的文件
@@ -377,8 +510,8 @@ dpkg -S /bin/bash
 dpkg -i /mnt/cdrom/pool/main/z/zip/zip_3.0-11build1_amd64.deb
 卸载软件包
 dpkg -r zip
-注意：一般建议不要使用dpkg卸载软件包。因为删除包时，依赖于它的其他任何包仍将安装，并且可能无法再正常运行</p>
-<h1 id="apt">apt</h1>
+注意：一般建议不要使用dpkg卸载软件包。因为删除包时，依赖于它的其他任何包仍将安装，并且可能无法再正常运行
+</code></pre><h1 id="apt-1">apt</h1>
 <ul>
 <li>Debian 使用APT工具来管理包系统，它与 rpm 命令不同。 在基于 Debian 的 Linux 发行版中，有各种工具可以与 APT 进行交互，以方便用户安装、删除和管理的软件包。</li>
 <li>apt-get 是其中一个常用的命令行工具，另外一款较为流行的命令行与 GUI 兼顾的工具是 Aptitude ，之前最常用的 Linux包管理命令都被分散在了 apt-get、 apt-cache和 apt-config 这三条命令中在 2014 年apt 命令发布第一个稳定版，Ubuntu 16.04 引入新特性之一便是 apt 命令，apt 命令解决了命令过于分散的问题，它包括 apt-get 命令出现以来使用最广泛的功能选项，以及 apt-cache 和 apt-config命令中很少用到的功能。在使用 apt 命令时，用户不必再由 apt-get 转到 apt-cache 或 apt-config，提供管理软件包所需的必要选项</li>
@@ -539,10 +672,10 @@ dpkg -r zip
                 
                 
                 
-                    <description><![CDATA[<h1 id="git-rm-与-rm-q的区别">git rm 与 rm q的区别</h1>
-<h1 id="git-branch--a">git branch -a</h1>
+                    <description><![CDATA[<h2 id="git-rm-与-rm-q的区别">git rm 与 rm q的区别</h2>
+<h2 id="git-branch--a">git branch -a</h2>
 <p>查询分支</p>
-<h1 id="git-分支创建的合并">git 分支创建的合并</h1>
+<h2 id="git-分支创建的合并">git 分支创建的合并</h2>
 <p>1、切换到基础分支，如主干</p>
 <pre><code>git checkout master
 </code></pre><p>2、创建并切换到新分支</p>
@@ -563,7 +696,7 @@ git push origin panda
 <p>6、 更新远程分支列表</p>
 <pre><code>git remote update origin --prune
 
-</code></pre><h1 id="git-add-和-git-add--a区别">git add .和 git add -A区别</h1>
+</code></pre><h2 id="git-add-和-git-add--a区别">git add .和 git add -A区别</h2>
 <p>git add . ：他会监控&lt;工作区的状态树&gt;，使用它会把工作时的所有变化提交到暂存区，包括文件内容修改(modified)以及新文件(new)，但不包括被删除的文件。</p>
 <p>git add -u ：他仅监控已经被add的文件（即tracked file），他会将被修改的文件提交到暂存区。add -u &lt;不会提交新文件&gt;（untracked file）。（git add --update的缩写）</p>
 <p>git add -A ：是上面两个功能的合集（git add --all的缩写）</p>

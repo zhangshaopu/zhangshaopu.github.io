@@ -3,18 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-02-16T19:59:44+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/categories/</loc>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/</loc>
-    <lastmod>2020-02-16T20:12:03+08:00</lastmod>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/</loc>
-    <lastmod>2020-02-16T20:12:03+08:00</lastmod>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -28,8 +28,33 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/</loc>
-    <lastmod>2020-02-16T20:12:03+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/tags/</loc>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/categories/tech/</loc>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/tags/ubantu/</loc>
+    <lastmod>2020-02-18T00:18:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/categories/ubantu/</loc>
+    <lastmod>2020-02-18T00:18:20+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-02-18T00:15:07+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-02-16T19:59:44+08:00</lastmod>
   </url>
   
   <url>
@@ -48,33 +73,23 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/</loc>
-    <lastmod>2020-02-16T20:12:03+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</loc>
     <lastmod>2020-02-16T01:12:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/git/</loc>
-    <lastmod>2020-02-15T15:52:01+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/tags/git/</loc>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/git/</loc>
-    <lastmod>2020-02-15T15:52:01+08:00</lastmod>
+    <loc>https://zhangshaopu.github.io/categories/git/</loc>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</loc>
-    <lastmod>2020-02-15T15:52:01+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhangshaopu.github.io/categories/tech/</loc>
-    <lastmod>2020-02-15T15:52:01+08:00</lastmod>
+    <lastmod>2020-02-18T00:15:22+08:00</lastmod>
   </url>
   
   <url>
@@ -83,12 +98,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/math/</loc>
+    <loc>https://zhangshaopu.github.io/tags/math/</loc>
     <lastmod>2020-02-14T23:56:02+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/math/</loc>
+    <loc>https://zhangshaopu.github.io/categories/math/</loc>
     <lastmod>2020-02-14T23:56:02+08:00</lastmod>
   </url>
   
@@ -99,17 +114,7 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/ubantu/</loc>
-    <lastmod>2020-02-14T23:26:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhangshaopu.github.io/tags/ubantu/</loc>
-    <lastmod>2020-02-14T23:26:02+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zhangshaopu.github.io/categories/ubantu/</loc>
-    <lastmod>2020-02-14T23:26:02+08:00</lastmod>
+    <lastmod>2020-02-18T00:18:20+08:00</lastmod>
   </url>
   
   <url>
@@ -139,7 +144,7 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/git%E6%93%8D%E4%BD%9C/</loc>
-    <lastmod>2020-02-15T01:07:57+08:00</lastmod>
+    <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
