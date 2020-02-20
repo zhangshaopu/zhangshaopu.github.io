@@ -21,10 +21,172 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Thu, 20 Feb 2020 01:38:33 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2020 15:44:12 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>Speechrecognition</title>
+                <link>https://zhangshaopu.github.io/posts/speechrecognition/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/speechrecognition/</guid>
+                <pubDate>Thu, 20 Feb 2020 15:12:09 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="几个函数">几个函数：</h2>
+<ol>
+<li>Ipython.display</li>
+</ol>
+<blockquote>
+<p>创建一个音频对象。
+当此对象由输入单元格返回或传递给显示功能时，它将导致音频控件显示在前端（仅在笔记本电脑上有效）。
+parameters</p>
+</blockquote>
+<ul>
+<li>data</li>
+<li>url</li>
+<li>filename</li>
+<li>...</li>
+</ul>
+<ol start="2">
+<li>
+<p>librosa</p>
+<blockquote>
+<p>一个对音频处理的包
+display()</p>
+<ul>
+<li>y,sr=librosa.load(filename)
+Returns:
+y:np.ndarray [shape=(n,) or (2, n)]
+audio time series</li>
+</ul>
+</blockquote>
+<pre><code> sr:number &gt; 0 [scalar]
+ sampling rate of y
+</code></pre>
+<ul>
+<li>mfcc1 = librosa.feature.mfcc(y,sr)</li>
+<li>librosa.display.specshow(mfcc1)</li>
+</ul>
+</li>
+<li>
+<p>speech_recognition</p>
+<blockquote>
+<p>用于执行语音识别的库，支持在线和离线的多个引擎和API。</p>
+<ul>
+<li>record()函数：将整个文件数据读入audiodata实例。</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>dtw</p>
+<blockquote>
+</blockquote>
+</li>
+</ol>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/learnmachine/">learnmachine</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/speechrecognition/">speechrecognition</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/speechrecognition/">speechrecognition</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+            <item>
+                <title>导数</title>
+                <link>https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/</guid>
+                <pubDate>Wed, 19 Feb 2020 18:22:59 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="复合函数求导方法">复合函数求导方法</h2>
+<ol>
+<li>一层一层拨开函数，按照基本初等函数的求导公式，若是几个初等函数嵌套且没有加减乘除^，则直接使用链式法则。</li>
+<li>若有加减乘除<a href="%E6%98%AF%E4%B8%A4%E4%B8%AA%E5%87%BD%E6%95%B0u(x),v(x)%E7%9A%84%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E3%80%82">^</a>，则根据四则求导法则，再使用链式法则。</li>
+</ol>
+<h2 id="微积分中d的含义">微积分中d的含义</h2>
+<ol>
+<li>增量的概念：
+Δx = x2 - x1，Δy = y2 - y1
+这里的Δ就是增量的意思，只要是后面的量减前面的量，无论正负都叫增量。</li>
+<li>无限小的概念：
+当一个变量x，越来越趋向于一个数值a时，这个趋向的过程无止境的进行，x与a的差值无限趋向于0，我们就说a是x的极限。
+这个差值，我们称它为“无穷小”，它是一个越来越小的过程，一个无限趋
+向于0的过程，它不是一个很小的数，而是一个趋向于0的过程。</li>
+<li>Δ一方面表示增量的概念，如果x1与x2差距很小，这个小是有限的小。只要写得出来，无论多少位小数点，只要你写得出，只要你的笔一停，都是有限的小。
+当x1与x2的差距在无止境的减小，无止境的靠近，在靠近的过程中，x1与x2的差距无止境的趋近于0。这时我们写成dx，也就是说，Δx是有限小的量，dx是无限小的量。</li>
+<li>d的来源，本来是 difference = 差距。当此差距无止境的趋向于0时，演变为 differentiation, 就变成了无限小的意思，称为“微分”。
+“微分”是一个过程，是无止境的“分割”，无止境的“区分”的过程。</li>
+</ol>
+<ul>
+<li>综上：d表示“微分”。“微分”是一个过程，在无止境“differentials”
+dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分，比如d(5x+11) = 5dx，5x+11可以写成y，即dy。</li>
+</ul>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>2019蓝桥杯</title>

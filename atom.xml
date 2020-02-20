@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-20T01:38:33+08:00</updated>
+    <updated>2020-02-20T15:44:12+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -16,6 +16,174 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.64.1">Hugo</generator>
+        <entry>
+            <title type="text">Speechrecognition</title>
+            <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/speechrecognition/" />
+            <id>https://zhangshaopu.github.io/posts/speechrecognition/</id>
+            <updated>2020-02-20T15:43:46+08:00</updated>
+            <published>2020-02-20T15:12:09+08:00</published>
+            
+            
+    
+    <summary type="html"><![CDATA[几个函数： Ipython.display 创建一个音频对象。 当此对象由输入单元格返回或传递给显示功能时，它将导致音频控件显示在前端（仅在笔记……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="几个函数">几个函数：</h2>
+<ol>
+<li>Ipython.display</li>
+</ol>
+<blockquote>
+<p>创建一个音频对象。
+当此对象由输入单元格返回或传递给显示功能时，它将导致音频控件显示在前端（仅在笔记本电脑上有效）。
+parameters</p>
+</blockquote>
+<ul>
+<li>data</li>
+<li>url</li>
+<li>filename</li>
+<li>...</li>
+</ul>
+<ol start="2">
+<li>
+<p>librosa</p>
+<blockquote>
+<p>一个对音频处理的包
+display()</p>
+<ul>
+<li>y,sr=librosa.load(filename)
+Returns:
+y:np.ndarray [shape=(n,) or (2, n)]
+audio time series</li>
+</ul>
+</blockquote>
+<pre><code> sr:number &gt; 0 [scalar]
+ sampling rate of y
+</code></pre>
+<ul>
+<li>mfcc1 = librosa.feature.mfcc(y,sr)</li>
+<li>librosa.display.specshow(mfcc1)</li>
+</ul>
+</li>
+<li>
+<p>speech_recognition</p>
+<blockquote>
+<p>用于执行语音识别的库，支持在线和离线的多个引擎和API。</p>
+<ul>
+<li>record()函数：将整个文件数据读入audiodata实例。</li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>dtw</p>
+<blockquote>
+</blockquote>
+</li>
+</ol>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/learnmachine/" term="learnmachine" label="learnmachine" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/speechrecognition/" term="speechrecognition" label="speechrecognition" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/tags/speechrecognition/" term="speechrecognition" label="speechrecognition" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">导数</title>
+            <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/" />
+            <id>https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/</id>
+            <updated>2020-02-20T15:44:00+08:00</updated>
+            <published>2020-02-19T18:22:59+08:00</published>
+            
+            
+    
+    <summary type="html"><![CDATA[复合函数求导方法 一层一层拨开函数，按照基本初等函数的求导公式，若是几个初等函数嵌套且没有加减乘除^，则直接使用……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="复合函数求导方法">复合函数求导方法</h2>
+<ol>
+<li>一层一层拨开函数，按照基本初等函数的求导公式，若是几个初等函数嵌套且没有加减乘除^，则直接使用链式法则。</li>
+<li>若有加减乘除<a href="%E6%98%AF%E4%B8%A4%E4%B8%AA%E5%87%BD%E6%95%B0u(x),v(x)%E7%9A%84%E5%8A%A0%E5%87%8F%E4%B9%98%E9%99%A4%E3%80%82">^</a>，则根据四则求导法则，再使用链式法则。</li>
+</ol>
+<h2 id="微积分中d的含义">微积分中d的含义</h2>
+<ol>
+<li>增量的概念：
+Δx = x2 - x1，Δy = y2 - y1
+这里的Δ就是增量的意思，只要是后面的量减前面的量，无论正负都叫增量。</li>
+<li>无限小的概念：
+当一个变量x，越来越趋向于一个数值a时，这个趋向的过程无止境的进行，x与a的差值无限趋向于0，我们就说a是x的极限。
+这个差值，我们称它为“无穷小”，它是一个越来越小的过程，一个无限趋
+向于0的过程，它不是一个很小的数，而是一个趋向于0的过程。</li>
+<li>Δ一方面表示增量的概念，如果x1与x2差距很小，这个小是有限的小。只要写得出来，无论多少位小数点，只要你写得出，只要你的笔一停，都是有限的小。
+当x1与x2的差距在无止境的减小，无止境的靠近，在靠近的过程中，x1与x2的差距无止境的趋近于0。这时我们写成dx，也就是说，Δx是有限小的量，dx是无限小的量。</li>
+<li>d的来源，本来是 difference = 差距。当此差距无止境的趋向于0时，演变为 differentiation, 就变成了无限小的意思，称为“微分”。
+“微分”是一个过程，是无止境的“分割”，无止境的“区分”的过程。</li>
+</ol>
+<ul>
+<li>综上：d表示“微分”。“微分”是一个过程，在无止境“differentials”
+dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分，比如d(5x+11) = 5dx，5x+11可以写成y，即dy。</li>
+</ul>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/study/" term="study" label="study" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/math/" term="math" label="math" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/tags/math/" term="math" label="math" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">2019蓝桥杯</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/" />
