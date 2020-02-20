@@ -21,10 +21,53 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Thu, 20 Feb 2020 15:44:12 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 20 Feb 2020 18:10:11 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>数值分析</title>
+                <link>https://zhangshaopu.github.io/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</guid>
+                <pubDate>Thu, 20 Feb 2020 16:08:19 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="绝对误差与绝对误差限">绝对误差与绝对误差限</h2>
+<blockquote>
+<p>绝对误差:e=x-x<sup><em></sup>
+相对误差限：e=(x-x<sup></em></sup>) $\leq$  $\varepsilon$</p>
+</blockquote>
+<ul>
+<li>notes: x:为近似值 x<sup>*</sup>:准确值</li>
+</ul>
+<h2 id="相对误差与相对误差限">相对误差与相对误差限</h2>
+<blockquote>
+<p>相对误差： e<sub>r</sub>=e/x<sup><em></sup><br>
+相对误差限：e<sub>r</sub>=e/x<sup></em></sup>  $\leq$ $\varepsilon$<sub>r</sub></p>
+</blockquote>
+<h2 id="有效数字与绝对误差限相对误差限的关系">有效数字与绝对误差限/相对误差限的关系</h2>
+<ol>
+<li>m是标准浮点数中 *10的幂级数</li>
+<li>n是有效数字位数</li>
+<li>1/2*10<sup>m-n</sup>中有小数位越多，误差越小。</li>
+</ol>
+<h2 id="有效数字定义">有效数字定义：</h2>
+<p>如果近似数的绝对误差不超过它某位数字的半个单位，那么从左到右，第一个不为零的数字起，到这位数字止，每一位数字都称为有效数字。用四舍五入法截得的近似数，其各位数字都是有效数字。表示同一个量的近似数，其有效数字越多，精确程度就越高。</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Speechrecognition</title>
@@ -239,13 +282,15 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
 
 <h3 id="未定式">未定式</h3>
 
-<p><span  class="math">\(\frac{0}{0}\)</span> ,
+<p><span  class="math">\[\frac{0}{0} ,
 \frac{\infty}{\infty} ,
-0{\times}{\infty}</p>
+0{\times}{\infty},
+\]</span></p>
 
 <p>指数未定型
-1<sup>{\infty},0</sup>0,{\infty}^0
-$$</p>
+<span  class="math">\( 
+1^{\infty},0^0,{\infty}^0 
+\)</span></p>
 
 <h2 id="反函数的特点">反函数的特点</h2>
 
