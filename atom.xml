@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">pupupu</title>
     <subtitle type="html">zsp个人博客。</subtitle>
-    <updated>2020-02-20T18:10:11+08:00</updated>
+    <updated>2020-02-22T01:08:15+08:00</updated>
     <id>https://zhangshaopu.github.io/</id>
     <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/" />
     <link rel="self" type="application/atom+xml" href="https://zhangshaopu.github.io/atom.xml" />
@@ -16,6 +16,56 @@
             </author>
     
     <generator uri="https://gohugo.io/" version="0.64.1">Hugo</generator>
+        <entry>
+            <title type="text">关于可导，可微，连续的思考</title>
+            <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/" />
+            <id>https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</id>
+            <updated>2020-02-22T01:08:02+08:00</updated>
+            <published>2020-02-22T00:22:59+08:00</published>
+            
+            
+    
+    <summary type="html"><![CDATA[关于可导，可微连续的思考： 函数不连续则一定不可导： 根据可导的定义：，若可导则极限一定存在。为什么呢，因为x-&……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="关于可导可微连续的思考">关于可导，可微连续的思考：</h2>
+<h3 id="函数不连续则一定不可导">函数不连续则一定不可导：</h3>
+<p>根据可导的定义：<img src="https://www.zhihu.com/equation?tex=%5Clim_%7Bx+%5Crightarrow+x_%7B0%7D%7D%7B%5Cfrac%7B%7Bf%28x%29-f%28x_%7B0%7D%29%7D%7D%7Bx-x_%7B0%7D%7D%7D" alt="[公式]">，若可导则极限一定存在。为什么呢，因为x-&gt;x0，表示x取不到x0，所以肯定是不会出现0/0型的情况。 再说为什么函数不连续一定不可导，因为假如f(x)在x=x0处不连续，即是间断点，（），f(x0)这个值取不到，因此导数定义这个极限就不存在了，即是不可导。</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/study/" term="study" label="study" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/categories/math/" term="math" label="math" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://zhangshaopu.github.io/tags/math/" term="math" label="math" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">数值分析</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/" />
@@ -257,7 +307,7 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
             <title type="text">2.17高数笔记</title>
             <link rel="alternate" type="text/html" href="https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/" />
             <id>https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</id>
-            <updated>2020-02-20T16:17:20+08:00</updated>
+            <updated>2020-02-20T20:16:35+08:00</updated>
             <published>2020-02-17T21:55:26+08:00</published>
             
             

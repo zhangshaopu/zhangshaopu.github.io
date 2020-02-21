@@ -21,10 +21,57 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Thu, 20 Feb 2020 18:10:11 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 22 Feb 2020 01:08:15 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
+        
+            <item>
+                <title>关于可导，可微，连续的思考</title>
+                <link>https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</link>
+                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</guid>
+                <pubDate>Sat, 22 Feb 2020 00:22:59 +0800</pubDate>
+                
+                
+                
+                    <description><![CDATA[<h2 id="关于可导可微连续的思考">关于可导，可微连续的思考：</h2>
+<h3 id="函数不连续则一定不可导">函数不连续则一定不可导：</h3>
+<p>根据可导的定义：<img src="https://www.zhihu.com/equation?tex=%5Clim_%7Bx+%5Crightarrow+x_%7B0%7D%7D%7B%5Cfrac%7B%7Bf%28x%29-f%28x_%7B0%7D%29%7D%7D%7Bx-x_%7B0%7D%7D%7D" alt="[公式]">，若可导则极限一定存在。为什么呢，因为x-&gt;x0，表示x取不到x0，所以肯定是不会出现0/0型的情况。 再说为什么函数不连续一定不可导，因为假如f(x)在x=x0处不连续，即是间断点，（），f(x0)这个值取不到，因此导数定义这个极限就不存在了，即是不可导。</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>数值分析</title>
