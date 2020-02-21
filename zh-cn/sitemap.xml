@@ -4,27 +4,27 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/math/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/tags/math/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -39,17 +39,17 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/study/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/tags/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2020-02-22T01:08:02+08:00</lastmod>
+    <lastmod>2020-02-22T01:08:57+08:00</lastmod>
   </url>
   
   <url>
@@ -68,12 +68,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/speechrecognition/</loc>
+    <loc>https://zhangshaopu.github.io/categories/speechrecognition/</loc>
     <lastmod>2020-02-20T15:43:46+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/speechrecognition/</loc>
+    <loc>https://zhangshaopu.github.io/tags/speechrecognition/</loc>
     <lastmod>2020-02-20T15:43:46+08:00</lastmod>
   </url>
   
@@ -123,12 +123,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/pytorch/</loc>
+    <loc>https://zhangshaopu.github.io/categories/pytorch/</loc>
     <lastmod>2020-02-16T01:12:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/pytorch/</loc>
+    <loc>https://zhangshaopu.github.io/tags/pytorch/</loc>
     <lastmod>2020-02-16T01:12:24+08:00</lastmod>
   </url>
   
@@ -138,12 +138,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/git/</loc>
+    <loc>https://zhangshaopu.github.io/categories/git/</loc>
     <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/git/</loc>
+    <loc>https://zhangshaopu.github.io/tags/git/</loc>
     <lastmod>2020-02-18T00:19:15+08:00</lastmod>
   </url>
   
@@ -198,12 +198,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/hugo/</loc>
+    <loc>https://zhangshaopu.github.io/tags/hugo/</loc>
     <lastmod>2020-02-16T20:12:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/hugo/</loc>
+    <loc>https://zhangshaopu.github.io/categories/hugo/</loc>
     <lastmod>2020-02-16T20:12:03+08:00</lastmod>
   </url>
   
