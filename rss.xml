@@ -21,7 +21,7 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sat, 22 Feb 2020 01:09:25 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 22 Feb 2020 21:28:28 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
@@ -286,7 +286,219 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                 
                 
                 
-                    <description><![CDATA[]]></description>
+                    <description><![CDATA[<h2 id="递归">递归：</h2>
+<h3 id="切一刀的思想">切一刀的思想：</h3>
+<ol>
+<li>找重复。</li>
+<li>找变化：变化的量应该作为参数（例如在阶乘的递归算法中，n作为参数传入到递归函数。）</li>
+<li>找边界：出口</li>
+<li>脑子里面时刻要有一副没有分叉的二叉树。</li>
+</ol>
+<h3 id="递归公式的思想">递归公式的思想：</h3>
+<h3 id="dfs深搜状态先纵后横">dfs深搜：（状态）先纵后横</h3>
+<ol>
+<li>
+<p>数独： dfs（）是典型的深搜代码框架。</p>
+</li>
+<li>
+<p>脑子里面时刻要有一副二叉树的图像，先往深处搜索（即转移到下一个状态），遇到不满足条件了，返回上一个状态（即回溯），随即进入平行状态。（即二叉树的兄弟结点）</p>
+</li>
+<li>
+<p>dfs（）的参数用于表明状态。在数独里面就是x，y。用于表明table(x,y)。</p>
+</li>
+<li>
+<p>dfs（）函数编写思路：</p>
+<ul>
+<li>如果满足需要处理的条件，对这个位置进行操作。
+<ol>
+<li>先用check()判断 输入能否某值，如果能则赋值，进行下一个位置深搜；不能就试下一个；</li>
+<li>回溯：返回上一个状态；在上一个状态进入平行状态。</li>
+</ol>
+</li>
+<li>否则，继续找下一个需要处理的位置。eg:比如在数独里，开始位置就是（0，0），倘若这个空已经填写了，则继续找下一个需要填写的空进行深搜。</li>
+</ul>
+</li>
+<li>
+<p>java Scanner 输入问题：</p>
+<blockquote>
+<p><strong>nextInt()</strong>: it only reads the int value, nextInt() places the cursor in the same line after reading the input.将空格看作是两个输入的数据的间隔， nextInt()只读取数值，剩下&quot;\n&quot;还没有读取，并将cursor放在本行中。</p>
+</blockquote>
+<blockquote>
+<p><strong>next():</strong> read the input only till the space. It can't read two words separated by space. Also, next() places the cursor in the same line after reading the input.</p>
+</blockquote>
+<blockquote>
+<p><strong>nextLine():</strong> reads input including space between the words (that is, it reads till the end of line \n). Once the input is read, nextLine() positions the cursor in the next line.读取内容并自动换行,不将空格看做是两个字符串的间隔，而是看作字符串的一部分，返回时，它作为String类型一并返回.</p>
+</blockquote>
+</li>
+<li>
+<p>char 和 int类型的转换：</p>
+<pre><code> table[i][j]=line.charAt(j)-'0';
+</code></pre>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">train</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+<span class="cm">/**
+</span><span class="cm"> 005300000
+</span><span class="cm"> 800000020
+</span><span class="cm"> 070010500
+</span><span class="cm"> 400005300
+</span><span class="cm"> 010070006
+</span><span class="cm"> 003200080
+</span><span class="cm"> 060500009
+</span><span class="cm"> 004000030
+</span><span class="cm"> 000009700
+</span><span class="cm"> */</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">shudu</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">9</span><span class="o">]</span><span class="o">[</span><span class="n">9</span><span class="o">]</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">)</span><span class="o">;</span>
+
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">9</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span>
+            <span class="n">String</span> <span class="n">line</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextLine</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">9</span><span class="o">;</span><span class="n">j</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span>
+                <span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="o">=</span><span class="n">line</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">j</span><span class="o">)</span><span class="o">-</span><span class="sc">&#39;0&#39;</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="c1">//System.out.println(table[1][1]);
+</span><span class="c1"></span>        <span class="n">print</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">dfs</span><span class="o">(</span><span class="n">table</span><span class="o">,</span><span class="n">0</span><span class="o">,</span><span class="n">0</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">x</span><span class="o">=</span><span class="o">=</span><span class="n">9</span><span class="o">)</span><span class="o">{</span>
+            <span class="n">print</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">exit</span><span class="o">(</span><span class="n">0</span><span class="o">)</span><span class="o">;</span><span class="c1">//另有情况用return
+</span><span class="c1"></span>        <span class="o">}</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">)</span><span class="o">{</span>
+            <span class="c1">//选1-9之间符合条件数字填到x，y位置上
+</span><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">10</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span>
+                <span class="kt">boolean</span> <span class="n">res</span> <span class="o">=</span> <span class="n">check</span><span class="o">(</span><span class="n">table</span><span class="o">,</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">,</span><span class="n">i</span><span class="o">)</span><span class="o">;</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+                    <span class="n">dfs</span><span class="o">(</span><span class="n">table</span><span class="o">,</span> <span class="n">x</span> <span class="o">+</span> <span class="o">(</span><span class="n">y</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">/</span> <span class="n">9</span><span class="o">,</span> <span class="o">(</span><span class="n">y</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">9</span><span class="o">)</span><span class="o">;</span><span class="c1">//纵深，深搜，进入到下一个状态；顺序为：先行后列
+</span><span class="c1"></span>                <span class="o">}</span>
+            <span class="o">}</span>
+            <span class="c1">//回溯，返回上一个状态
+</span><span class="c1"></span>            <span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span><span class="n">0</span><span class="o">;</span>
+        <span class="o">}</span><span class="k">else</span><span class="o">{</span>
+            <span class="c1">//继续找下一个需要处理的位置
+</span><span class="c1"></span>            <span class="n">dfs</span><span class="o">(</span><span class="n">table</span><span class="o">,</span><span class="n">x</span><span class="o">+</span><span class="o">(</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">)</span><span class="o">/</span><span class="n">9</span><span class="o">,</span><span class="o">(</span><span class="n">y</span><span class="o">+</span><span class="n">1</span><span class="o">)</span><span class="o">%</span><span class="n">9</span><span class="o">)</span><span class="o">;</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">(</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">9</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span>
+        <span class="o">{</span>
+            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">9</span><span class="o">;</span><span class="n">j</span><span class="o">+</span><span class="o">+</span><span class="o">)</span>
+            <span class="o">{</span>
+                <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="o">)</span><span class="o">;</span>
+            <span class="o">}</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="c1">//检查满足（1）每一行、（2）每一列、（3）每一个同色九宫内的数字均含1-9，不重复。三个条件
+</span><span class="c1"></span>    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">check</span><span class="o">(</span><span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span><span class="o">,</span> <span class="kt">int</span> <span class="n">x</span><span class="o">,</span> <span class="kt">int</span> <span class="n">y</span><span class="o">,</span> <span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//检查同行同列
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">0</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">9</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="o">=</span><span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">)</span> <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">value</span><span class="o">=</span><span class="o">=</span><span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span><span class="o">)</span> <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+
+        <span class="o">}</span>
+        <span class="c1">//检查小九宫格
+</span><span class="c1"></span>        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="o">(</span><span class="n">x</span><span class="o">/</span><span class="n">3</span><span class="o">)</span><span class="o">*</span><span class="n">3</span><span class="o">;</span><span class="n">l</span><span class="o">&lt;</span><span class="o">(</span><span class="n">x</span><span class="o">/</span><span class="n">3</span><span class="o">+</span><span class="n">1</span><span class="o">)</span><span class="o">*</span><span class="n">3</span><span class="o">;</span><span class="n">l</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span><span class="c1">//行
+</span><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="o">(</span><span class="n">y</span><span class="o">/</span><span class="n">3</span><span class="o">)</span><span class="o">*</span><span class="n">3</span><span class="o">;</span><span class="n">m</span><span class="o">&lt;</span><span class="o">(</span><span class="n">y</span><span class="o">/</span><span class="n">3</span><span class="o">+</span><span class="n">1</span><span class="o">)</span><span class="o">*</span><span class="n">3</span><span class="o">;</span><span class="n">m</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span><span class="c1">//列
+</span><span class="c1"></span>                <span class="k">if</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">l</span><span class="o">]</span><span class="o">[</span><span class="n">m</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">value</span><span class="o">)</span> <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></description>
                 
                 
                 
@@ -295,6 +507,14 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                     
                         
                     
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://zhangshaopu.github.io/tags/algorithm/">algorithm</category>
+                                
+                            
                         
                     
                 
