@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
@@ -19,12 +19,12 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -44,7 +44,7 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/tags/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
@@ -84,22 +84,22 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/algorithm/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/tags/algorithm/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
     <loc>https://zhangshaopu.github.io/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/</loc>
-    <lastmod>2020-02-23T14:37:33+08:00</lastmod>
+    <lastmod>2020-02-26T21:17:24+08:00</lastmod>
   </url>
   
   <url>
@@ -138,12 +138,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/pytorch/</loc>
+    <loc>https://zhangshaopu.github.io/tags/pytorch/</loc>
     <lastmod>2020-02-16T01:12:24+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/pytorch/</loc>
+    <loc>https://zhangshaopu.github.io/categories/pytorch/</loc>
     <lastmod>2020-02-16T01:12:24+08:00</lastmod>
   </url>
   
@@ -189,7 +189,7 @@
   
   <url>
     <loc>https://zhangshaopu.github.io/about/</loc>
-    <lastmod>2020-02-24T22:22:27+08:00</lastmod>
+    <lastmod>2020-02-25T23:54:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -213,12 +213,12 @@
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/tags/hugo/</loc>
+    <loc>https://zhangshaopu.github.io/categories/hugo/</loc>
     <lastmod>2020-02-16T20:12:03+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zhangshaopu.github.io/categories/hugo/</loc>
+    <loc>https://zhangshaopu.github.io/tags/hugo/</loc>
     <lastmod>2020-02-16T20:12:03+08:00</lastmod>
   </url>
   

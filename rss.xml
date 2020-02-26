@@ -21,7 +21,7 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Mon, 24 Feb 2020 22:29:23 +0800</lastBuildDate>
+        <lastBuildDate>Wed, 26 Feb 2020 21:17:46 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
         
@@ -294,8 +294,161 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
 <li>找边界：出口</li>
 <li>脑子里面时刻要有一副没有分叉的二叉树。</li>
 </ol>
-<h3 id="递归公式的思想">递归公式的思想：</h3>
-<h3 id="dfs深搜状态先纵后横">dfs深搜：（状态）先纵后横</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="n">上楼梯</span><span class="err">：</span>
+    <span class="c1">//上楼梯 一个人上楼梯的方式有 一次一步 两步 三步
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">shanglouti</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span><span class="o">{</span>
+    	<span class="c1">//出口
+</span><span class="c1"></span>        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span> <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">2</span><span class="o">)</span> <span class="k">return</span> <span class="n">2</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">3</span><span class="o">)</span> <span class="k">return</span> <span class="n">4</span><span class="o">;</span>
+
+        <span class="k">return</span> <span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">+</span><span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">2</span><span class="o">)</span><span class="o">+</span><span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">3</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="/images/shanglouti.jpg" alt="shanglouti"></p>
+<p>notes：根据题目，因为一个人上楼梯的方式有以上三种。所以逆向考虑最后一步有3中可能：从n-1，n-2，n-3，处上来，用分割思想:即无论有多少级楼梯，都把它分割成最后n-1阶，最后n-2阶，最后n-3阶考虑。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="c1">//阶乘:
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">jiecheng</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span><span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">jiecheng</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">*</span><span class="n">n</span><span class="o">;</span>
+    <span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>notes:也是逆向思考，将连乘从后往前切，即4！=1 * 2 * 3 * 4 即 3！*4</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">forth</span><span class="o">;</span>
+
+<span class="cm">/**
+</span><span class="cm"> * @author zsp
+</span><span class="cm"> * @version v 0.1 2020/2/26 18:29
+</span><span class="cm"> */</span>
+<span class="kd">class</span> <span class="nc">try1</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+<span class="c1">//        System.out.println(fib(3));
+</span><span class="c1"></span><span class="c1">//        int res = f3(new int[]{1,2,3,4},0);
+</span><span class="c1"></span><span class="c1">//        System.out.println(res);
+</span><span class="c1"></span><span class="c1">//        System.out.println(revers(&#34;abcd&#34;,3));
+</span><span class="c1"></span><span class="c1">//        System.out.println(shanglouti(4));
+</span><span class="c1"></span>        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">jiecheng</span><span class="o">(</span><span class="n">5</span><span class="o">)</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//斐波那契数列
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">fib</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">n</span> <span class="o">=</span><span class="o">=</span> <span class="n">1</span> <span class="o">|</span><span class="o">|</span> <span class="n">n</span> <span class="o">=</span><span class="o">=</span> <span class="n">2</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+
+        <span class="k">return</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">1</span><span class="o">)</span> <span class="o">+</span> <span class="n">fib</span><span class="o">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">2</span><span class="o">)</span><span class="o">;</span><span class="c1">//两个fib()小弟
+</span><span class="c1"></span>    <span class="o">}</span>
+    <span class="c1">//求数组和
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">f3</span><span class="o">(</span><span class="kt">int</span><span class="o">[</span><span class="o">]</span> <span class="n">arr</span><span class="o">,</span><span class="kt">int</span> <span class="n">begin</span><span class="o">)</span><span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">begin</span> <span class="o">=</span><span class="o">=</span> <span class="n">arr</span><span class="o">.</span><span class="na">length</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">{</span>
+            <span class="k">return</span> <span class="n">arr</span><span class="o">[</span><span class="n">begin</span><span class="o">]</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="o">[</span><span class="n">begin</span><span class="o">]</span><span class="o">+</span><span class="n">f3</span><span class="o">(</span><span class="n">arr</span> <span class="o">,</span> <span class="n">begin</span><span class="o">+</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//翻转字符串
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="n">String</span> <span class="nf">revers</span><span class="o">(</span><span class="n">String</span> <span class="n">string</span><span class="o">,</span><span class="kt">int</span> <span class="n">end</span><span class="o">)</span><span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">end</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">)</span>
+            <span class="k">return</span> <span class="s">&#34;&#34;</span><span class="o">+</span><span class="n">string</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">0</span><span class="o">)</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">string</span><span class="o">.</span><span class="na">charAt</span><span class="o">(</span><span class="n">end</span><span class="o">)</span><span class="o">+</span><span class="n">revers</span><span class="o">(</span><span class="n">string</span><span class="o">,</span><span class="n">end</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//上楼梯 一个人上楼梯的方式有 一次一步 两步 三步
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">shanglouti</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span><span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span> <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">2</span><span class="o">)</span> <span class="k">return</span> <span class="n">2</span><span class="o">;</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">3</span><span class="o">)</span> <span class="k">return</span> <span class="n">4</span><span class="o">;</span>
+
+        <span class="k">return</span> <span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">+</span><span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">2</span><span class="o">)</span><span class="o">+</span><span class="n">shanglouti</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">3</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="c1">//阶乘
+</span><span class="c1"></span>    <span class="kd">static</span> <span class="kt">int</span> <span class="nf">jiecheng</span><span class="o">(</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span><span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">n</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span>
+            <span class="k">return</span> <span class="n">1</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">n</span><span class="o">*</span><span class="n">jiecheng</span><span class="o">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="递归公式的思想">递归公式的思想：</h3>
+<h3 id="dfs深搜状态先纵后横是对解的一种试探">dfs深搜：（状态）先纵后横，是对解的一种试探</h3>
 <ol>
 <li>
 <p>数独： dfs（）是典型的深搜代码框架。</p>
@@ -339,7 +492,7 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
 <p>注意状态回溯要写在进入平行状态dfs之前。</p>
 </li>
 </ol>
-<h3 id="例题1数独">例题1：数独</h3>
+<h3 id="例题一数独">例题一：数独</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -459,8 +612,8 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
         <span class="k">if</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">)</span><span class="o">{</span>
             <span class="c1">//选1-9之间符合条件数字填到x，y位置上
 </span><span class="c1"></span>            <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">10</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span><span class="o">{</span><span class="c1">//进入下一个状态
-</span><span class="c1"></span>                <span class="kt">boolean</span> <span class="n">res</span> <span class="o">=</span> <span class="n">check</span><span class="o">(</span><span class="n">table</span><span class="o">,</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">,</span><span class="n">i</span><span class="o">)</span><span class="o">;</span>
-                <span class="k">if</span><span class="o">(</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+</span><span class="c1"></span>                <span class="kt">boolean</span> <span class="n">res</span> <span class="o">=</span> <span class="n">check</span><span class="o">(</span><span class="n">table</span><span class="o">,</span><span class="n">x</span><span class="o">,</span><span class="n">y</span><span class="o">,</span><span class="n">i</span><span class="o">)</span><span class="o">;</span><span class="c1">//剪枝
+</span><span class="c1"></span>                <span class="k">if</span><span class="o">(</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
                     <span class="n">table</span><span class="o">[</span><span class="n">x</span><span class="o">]</span><span class="o">[</span><span class="n">y</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
                     <span class="n">dfs</span><span class="o">(</span><span class="n">table</span><span class="o">,</span> <span class="n">x</span> <span class="o">+</span> <span class="o">(</span><span class="n">y</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">/</span> <span class="n">9</span><span class="o">,</span> <span class="o">(</span><span class="n">y</span> <span class="o">+</span> <span class="n">1</span><span class="o">)</span> <span class="o">%</span> <span class="n">9</span><span class="o">)</span><span class="o">;</span><span class="c1">//纵深，深搜，进入到下一个状态；顺序为：先行后列
 </span><span class="c1"></span>                <span class="o">}</span>
@@ -599,7 +752,384 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
 
 </code></pre></td></tr></table>
 </div>
-</div>]]></description>
+</div><h3 id="例题三">例题三：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">second</span><span class="o">;</span>
+<span class="cm">/*w:表示水
+</span><span class="cm">  .:表示陆地
+</span><span class="cm">n=10
+</span><span class="cm">m=12
+</span><span class="cm">W........WW.
+</span><span class="cm">.WWW.....WWW
+</span><span class="cm">....WW...WW.
+</span><span class="cm">.........WW.
+</span><span class="cm">.........W..
+</span><span class="cm">..W......W..
+</span><span class="cm">.W.W.....WW.
+</span><span class="cm">W.W.W.....W.
+</span><span class="cm">.W.W......W.
+</span><span class="cm">..W.......W.
+</span><span class="cm"> */</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">shuiwa</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">)</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">m</span><span class="o">=</span><span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="kt">char</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">a</span><span class="o">=</span><span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="o">[</span><span class="o">]</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">count</span><span class="o">=</span><span class="n">0</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">next</span><span class="o">(</span><span class="o">)</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">m</span><span class="o">;</span> <span class="n">j</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+                <span class="k">if</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="sc">&#39;W&#39;</span><span class="o">)</span> <span class="o">{</span>
+                    <span class="n">dfs</span><span class="o">(</span><span class="n">a</span><span class="o">,</span><span class="n">i</span><span class="o">,</span><span class="n">j</span><span class="o">)</span><span class="o">;</span>
+                    <span class="n">count</span><span class="o">+</span><span class="o">+</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">count</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="kt">char</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">a</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">int</span> <span class="n">j</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">=</span> <span class="sc">&#39;.&#39;</span><span class="o">;</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="n">2</span><span class="o">;</span> <span class="n">k</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span><span class="c1">//-1 0 1
+</span><span class="c1"></span>            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">l</span> <span class="o">=</span> <span class="o">-</span><span class="n">1</span><span class="o">;</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="n">2</span><span class="o">;</span> <span class="n">l</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span><span class="c1">//-1 0 1
+</span><span class="c1"></span>                <span class="k">if</span><span class="o">(</span><span class="n">k</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">l</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">)</span><span class="k">continue</span><span class="o">;</span><span class="c1">//排除自己
+</span><span class="c1"></span>
+                <span class="k">if</span><span class="o">(</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="o">&gt;</span><span class="o">=</span><span class="n">0</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">i</span><span class="o">+</span><span class="n">k</span><span class="o">&lt;</span><span class="o">=</span><span class="n">9</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">j</span><span class="o">+</span><span class="n">l</span><span class="o">&gt;</span><span class="o">=</span><span class="n">0</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">j</span><span class="o">+</span><span class="n">l</span><span class="o">&lt;</span><span class="o">=</span><span class="n">11</span><span class="o">)</span> <span class="o">{</span><span class="c1">//限制边界
+</span><span class="c1"></span>                    <span class="k">if</span> <span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="o">]</span><span class="o">[</span><span class="n">j</span> <span class="o">+</span> <span class="n">l</span><span class="o">]</span> <span class="o">=</span><span class="o">=</span> <span class="sc">&#39;W&#39;</span><span class="o">)</span>
+                        <span class="n">dfs</span><span class="o">(</span><span class="n">a</span><span class="o">,</span> <span class="n">i</span> <span class="o">+</span> <span class="n">k</span><span class="o">,</span> <span class="n">j</span> <span class="o">+</span> <span class="n">l</span><span class="o">)</span><span class="o">;</span>
+                <span class="o">}</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>notes:</p>
+<ol>
+<li>注意八个方向的写法，用两层循环 3*3 -1个数表示八个方向。</li>
+<li>在这个dfs中没有用到回溯。因为假如用到回溯，还原回到遍历过的水坑状态，那么在它进入下一个状态时可能还是一开始的状态，就会出现死循环。所以采用把遍历过的水坑都变成陆地。</li>
+<li>next()和nextline()的区别；</li>
+</ol>
+<h3 id="例题四">例题四：</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">third</span><span class="o">;</span>
+
+<span class="cm">/**
+</span><span class="cm"> * @author zsp
+</span><span class="cm"> * @version v 0.1 2020/2/26 11:21
+</span><span class="cm"> */</span>
+<span class="cm">/*
+</span><span class="cm">每行每列每条对角线上都只有一个棋子，求其摆放方法数
+</span><span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">nqueens</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">n</span><span class="o">=</span><span class="n">4</span><span class="o">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="o">;</span>
+        <span class="n">dfs</span><span class="o">(</span><span class="n">0</span><span class="o">,</span> <span class="n">table</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">count</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">,</span> <span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">row</span> <span class="o">=</span><span class="o">=</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">count</span><span class="o">+</span><span class="o">+</span><span class="o">;</span>
+            <span class="k">return</span><span class="o">;</span><span class="c1">//很灵性
+</span><span class="c1"></span>        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="c1">//剪枝 行 列 对角线上都没有
+</span><span class="c1"></span>            <span class="k">if</span> <span class="o">(</span><span class="n">check</span><span class="o">(</span><span class="n">row</span><span class="o">,</span> <span class="n">i</span><span class="o">,</span> <span class="n">table</span><span class="o">)</span><span class="o">)</span> <span class="o">{</span>
+                <span class="n">table</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+                <span class="n">dfs</span><span class="o">(</span><span class="n">row</span> <span class="o">+</span> <span class="n">1</span><span class="o">,</span> <span class="n">table</span><span class="o">)</span><span class="o">;</span>
+                <span class="n">table</span><span class="o">[</span><span class="n">row</span><span class="o">]</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">check</span><span class="o">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">,</span> <span class="kt">int</span> <span class="n">col</span><span class="o">,</span> <span class="kt">int</span><span class="o">[</span><span class="o">]</span><span class="o">[</span><span class="o">]</span> <span class="n">table</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">//其实不用对行进行判断，只需对列和对角线
+</span><span class="c1"></span>        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span><span class="c1">//对列
+</span><span class="c1"></span>            <span class="k">if</span> <span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">col</span><span class="o">]</span> <span class="o">=</span><span class="o">=</span> <span class="n">1</span><span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">row</span><span class="o">,</span><span class="n">j</span><span class="o">=</span><span class="n">col</span><span class="o">;</span> <span class="n">i</span><span class="o">&gt;</span><span class="o">=</span><span class="n">0</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">j</span><span class="o">&gt;</span><span class="o">=</span><span class="n">0</span><span class="o">;</span> <span class="n">i</span><span class="o">-</span><span class="o">-</span><span class="o">,</span><span class="n">j</span><span class="o">-</span><span class="o">-</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">row</span><span class="o">,</span><span class="n">j</span><span class="o">=</span><span class="n">col</span><span class="o">;</span> <span class="n">i</span><span class="o">&gt;</span><span class="o">=</span><span class="n">0</span><span class="o">&amp;</span><span class="o">&amp;</span><span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">-</span><span class="o">-</span><span class="o">,</span><span class="n">j</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">table</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">[</span><span class="n">j</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">1</span><span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><p>notes:</p>
+<ol>
+<li>对于对角线上的搜索</li>
+<li>for循环的逻辑问题，表达式2的意思是：当i/j 在上一次循环里 ++/-- 后，先判断是否满足表达式二，再进行下一次循环。</li>
+</ol>
+<h3 id="例题五素数环">例题五：素数环</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">forth</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="o">;</span>
+
+<span class="cm">/**
+</span><span class="cm"> * @author zsp
+</span><span class="cm"> * @version v 0.1 2020/2/26 16:33
+</span><span class="cm"> */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">sushuhuan</span> <span class="o">{</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">flag</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[</span><span class="o">]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Scanner</span> <span class="n">sc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">in</span><span class="o">)</span><span class="o">;</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="na">nextInt</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+        <span class="kt">int</span><span class="o">[</span><span class="o">]</span> <span class="n">r</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="n">n</span><span class="o">+</span><span class="n">1</span><span class="o">]</span><span class="o">;</span>
+        <span class="n">r</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+        <span class="n">dfs</span><span class="o">(</span><span class="n">2</span><span class="o">,</span><span class="n">r</span><span class="o">,</span><span class="n">n</span><span class="o">)</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">flag</span><span class="o">!</span><span class="o">=</span><span class="n">1</span><span class="o">)</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;no solution&#34;</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">dfs</span><span class="o">(</span><span class="kt">int</span> <span class="n">cur</span><span class="o">,</span> <span class="kt">int</span><span class="o">[</span><span class="o">]</span> <span class="n">r</span><span class="o">,</span><span class="kt">int</span> <span class="n">n</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span><span class="o">(</span><span class="n">cur</span><span class="o">=</span><span class="o">=</span><span class="n">n</span><span class="o">+</span><span class="n">1</span> <span class="o">&amp;</span><span class="o">&amp;</span> <span class="n">sushu</span><span class="o">(</span><span class="n">r</span><span class="o">[</span><span class="n">1</span><span class="o">]</span><span class="o">+</span><span class="n">r</span><span class="o">[</span><span class="n">n</span><span class="o">]</span><span class="o">)</span><span class="o">)</span><span class="o">{</span>
+            <span class="n">flag</span> <span class="o">=</span><span class="n">1</span><span class="o">;</span>
+            <span class="n">print</span><span class="o">(</span> <span class="n">r</span> <span class="o">)</span><span class="o">;</span>
+            <span class="k">return</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span><span class="o">=</span><span class="n">n</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">check</span><span class="o">(</span><span class="n">r</span><span class="o">,</span><span class="n">i</span><span class="o">,</span><span class="n">cur</span><span class="o">)</span><span class="o">)</span><span class="c1">//1.与上一个数相加是素数 2.且这个数不在数组里面
+</span><span class="c1"></span>            <span class="o">{</span>
+                <span class="n">r</span><span class="o">[</span><span class="n">cur</span><span class="o">]</span> <span class="o">=</span> <span class="n">i</span><span class="o">;</span>
+               <span class="n">dfs</span><span class="o">(</span><span class="n">cur</span><span class="o">+</span><span class="n">1</span><span class="o">,</span><span class="n">r</span><span class="o">,</span><span class="n">n</span><span class="o">)</span><span class="o">;</span>
+               <span class="n">r</span><span class="o">[</span><span class="n">cur</span><span class="o">]</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">(</span><span class="kt">int</span><span class="o">[</span><span class="o">]</span> <span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">1</span><span class="o">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">a</span><span class="o">.</span><span class="na">length</span><span class="o">;</span><span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span>
+            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">print</span><span class="o">(</span><span class="n">a</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">+</span><span class="s">&#34; &#34;</span><span class="o">)</span><span class="o">;</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="o">)</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">check</span><span class="o">(</span><span class="kt">int</span><span class="o">[</span><span class="o">]</span> <span class="n">r</span><span class="o">,</span><span class="kt">int</span> <span class="n">val</span> <span class="o">,</span><span class="kt">int</span> <span class="n">cur</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kt">int</span> <span class="n">sum</span> <span class="o">=</span> <span class="n">val</span><span class="o">+</span><span class="n">r</span><span class="o">[</span><span class="n">cur</span><span class="o">-</span><span class="n">1</span><span class="o">]</span><span class="o">;</span>
+        <span class="k">if</span><span class="o">(</span><span class="o">!</span><span class="n">sushu</span><span class="o">(</span><span class="n">sum</span><span class="o">)</span><span class="o">)</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cur</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">r</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="o">=</span><span class="o">=</span><span class="n">val</span><span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">boolean</span> <span class="nf">sushu</span><span class="o">(</span><span class="kt">int</span> <span class="n">temp</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">2</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">temp</span><span class="o">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">if</span><span class="o">(</span><span class="n">temp</span><span class="o">%</span><span class="n">i</span><span class="o">=</span><span class="o">=</span><span class="n">0</span><span class="o">)</span>
+                <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>notes:</p>
+<ol>
+<li>素数的判断</li>
+<li></li>
+</ol>
+]]></description>
                 
                 
                 
