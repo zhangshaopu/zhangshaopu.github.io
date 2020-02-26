@@ -390,7 +390,7 @@
     </footer>
 
         </div>
-        <script src="/en-us/js/meme.min.10b69ef81544b96691de93039f8eeb6403f8a00b15efb5a7d14f327d2fbd5c99.js" integrity="sha256-ELae+BVEuWaR3pMDn47rZAP4oAsV77Wn0U8yfS+9XJk=" data-no-instant></script>
+        <script src="/en-us/js/meme.min.56ae964b482c72db3c9a717103ac4a4fe34440e75c6095eb454f8e01fd97e681.js" integrity="sha256-Vq6WS0gscts8mnFxA6xKT+NEQOdcYJXrRU+OAf2X5oE=" data-no-instant></script>
 
 
     <script data-no-instant>InstantClick.init();</script>
@@ -443,7 +443,81 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css" integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG" crossorigin="anonymous" />
+<script>
+    if (typeof renderMathInElement === 'undefined') {
+        var getScript = (options) => {
+            var script = document.createElement('script');
+            script.defer = true;
+            script.crossOrigin = 'anonymous';
+            Object.keys(options).forEach((key) => {
+                script[key] = options[key];
+            });
+            document.body.appendChild(script);
+        };
+        getScript({
+            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.js',
+            integrity: 'sha384-JiKN5O8x9Hhs/UE5cT5AAJqieYlOZbGT3CHws/y97o3ty4R7/O5poG9F3JoiOYw1',
+            onload: () => {
+                getScript({
+                    src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/mhchem.min.js',
+                    integrity: 'sha384-oa0lfxCGjaU1LdYckhq8LZcP+JTf8cyJXe69O6VE6UrShzWveT6KiCElJrck/stm',
+                    onload: () => {
+                        getScript({
+                            src: 'https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/contrib/auto-render.min.js',
+                            integrity: 'sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI',
+                            onload: () => {
+                                renderKaTex();
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    } else {
+        renderKaTex();
+    }
+    function renderKaTex() {
+        renderMathInElement(
+            document.body,
+            {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "\\[", right: "\\]", display: true},
+                    {left: "$", right: "$", display: false},
+                    {left: "\\(", right: "\\)", display: false}
+                ]
+            }
+        );
+    }
+</script>
 
+
+
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function () {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
 
 
 
