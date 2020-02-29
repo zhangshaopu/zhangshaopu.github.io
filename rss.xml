@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>pupupu</title>
-        <link>https://zhangshaopu.github.io/</link>
+        <link>https://www.zhangshaopu.top/</link>
         <description>zsp个人博客。</description>
         <generator>Hugo 0.64.1 https://gohugo.io/</generator>
         
@@ -21,15 +21,15 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sat, 29 Feb 2020 00:41:21 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 29 Feb 2020 23:14:29 +0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/rss.xml" />
+            <atom:link rel="self" type="application/rss+xml" href="https://www.zhangshaopu.top/rss.xml" />
         
         
             <item>
                 <title>关于可导，可微，连续的思考</title>
-                <link>https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E5%85%B3%E4%BA%8E%E5%8F%AF%E5%AF%BC%E5%8F%AF%E5%BE%AE%E8%BF%9E%E7%BB%AD%E7%9A%84%E6%80%9D%E8%80%83/</guid>
                 <pubDate>Sat, 22 Feb 2020 00:22:59 +0800</pubDate>
                 
                 
@@ -49,13 +49,13 @@
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -65,7 +65,7 @@
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -75,8 +75,8 @@
         
             <item>
                 <title>数值分析</title>
-                <link>https://zhangshaopu.github.io/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90/</guid>
                 <pubDate>Thu, 20 Feb 2020 16:08:19 +0800</pubDate>
                 
                 
@@ -118,8 +118,8 @@
         
             <item>
                 <title>Speechrecognition</title>
-                <link>https://zhangshaopu.github.io/posts/speechrecognition/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/speechrecognition/</guid>
+                <link>https://www.zhangshaopu.top/posts/speechrecognition/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/speechrecognition/</guid>
                 <pubDate>Thu, 20 Feb 2020 15:12:09 +0800</pubDate>
                 
                 
@@ -187,13 +187,13 @@ audio time series</li>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/learnmachine/">learnmachine</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/learnmachine/">learnmachine</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/speechrecognition/">speechrecognition</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/speechrecognition/">speechrecognition</category>
                                 
                             
                         
@@ -203,7 +203,7 @@ audio time series</li>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/speechrecognition/">speechrecognition</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/speechrecognition/">speechrecognition</category>
                                 
                             
                         
@@ -213,8 +213,8 @@ audio time series</li>
         
             <item>
                 <title>导数</title>
-                <link>https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%AF%BC%E6%95%B0/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E5%AF%BC%E6%95%B0/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E5%AF%BC%E6%95%B0/</guid>
                 <pubDate>Wed, 19 Feb 2020 18:22:59 +0800</pubDate>
                 
                 
@@ -254,13 +254,13 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -270,7 +270,7 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -280,8 +280,8 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
         
             <item>
                 <title>递归和dfs</title>
-                <link>https://zhangshaopu.github.io/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/</guid>
+                <link>https://www.zhangshaopu.top/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/2019%E8%93%9D%E6%A1%A5%E6%9D%AF/</guid>
                 <pubDate>Tue, 18 Feb 2020 23:28:42 +0800</pubDate>
                 
                 
@@ -1141,13 +1141,13 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/">蓝桥杯</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/">蓝桥杯</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/algorithm/">algorithm</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/algorithm/">algorithm</category>
                                 
                             
                         
@@ -1157,7 +1157,7 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/algorithm/">algorithm</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/algorithm/">algorithm</category>
                                 
                             
                         
@@ -1167,8 +1167,8 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
         
             <item>
                 <title>2.17高数笔记</title>
-                <link>https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
+                <link>https://www.zhangshaopu.top/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/2.17%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
                 <pubDate>Mon, 17 Feb 2020 21:55:26 +0800</pubDate>
                 
                 
@@ -1224,13 +1224,13 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -1240,7 +1240,7 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -1250,8 +1250,8 @@ dx是微分符号，通常把自变量 x 的增量 Δx 称为自变量的微分�
         
             <item>
                 <title>ubantu包管理工具</title>
-                <link>https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
+                <link>https://www.zhangshaopu.top/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/ubantu%E5%8C%85%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/</guid>
                 <pubDate>Mon, 17 Feb 2020 15:36:27 +0800</pubDate>
                 
                 
@@ -1359,13 +1359,13 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/tech/">tech</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/ubantu/">ubantu</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/ubantu/">ubantu</category>
                                 
                             
                         
@@ -1375,7 +1375,7 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/ubantu/">ubantu</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/ubantu/">ubantu</category>
                                 
                             
                         
@@ -1385,8 +1385,8 @@ tar -xvf xxx.tar
         
             <item>
                 <title>2020.2.14高数笔记</title>
-                <link>https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
+                <link>https://www.zhangshaopu.top/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/2.16%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
                 <pubDate>Sun, 16 Feb 2020 18:28:08 +0800</pubDate>
                 
                 
@@ -1422,13 +1422,13 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -1438,7 +1438,7 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -1448,8 +1448,8 @@ tar -xvf xxx.tar
         
             <item>
                 <title>基于pytorch的单样本学习和孪生网络图像识别</title>
-                <link>https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E5%9F%BA%E4%BA%8Epytorch%E7%9A%84%E5%8D%95%E6%A0%B7%E6%9C%AC%E5%AD%A6%E4%B9%A0%E5%92%8C%E5%AD%AA%E7%94%9F%E7%BD%91%E7%BB%9C%E5%9B%BE%E5%83%8F%E8%AF%86%E5%88%AB/</guid>
                 <pubDate>Sun, 16 Feb 2020 01:05:30 +0800</pubDate>
                 
                 
@@ -1477,13 +1477,13 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/deepleaning/">deepleaning</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/deepleaning/">deepleaning</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/pytorch/">pytorch</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/pytorch/">pytorch</category>
                                 
                             
                         
@@ -1493,7 +1493,7 @@ tar -xvf xxx.tar
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/pytorch/">pytorch</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/pytorch/">pytorch</category>
                                 
                             
                         
@@ -1503,8 +1503,8 @@ tar -xvf xxx.tar
         
             <item>
                 <title>Git更新本地库</title>
-                <link>https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</guid>
+                <link>https://www.zhangshaopu.top/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/git%E6%9B%B4%E6%96%B0%E6%9C%AC%E5%9C%B0%E5%BA%93/</guid>
                 <pubDate>Sat, 15 Feb 2020 13:59:37 +0800</pubDate>
                 
                 
@@ -1586,13 +1586,13 @@ $git branch -d temp  删除temp
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/tech/">tech</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/git/">git</category>
                                 
                             
                         
@@ -1602,7 +1602,7 @@ $git branch -d temp  删除temp
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/git/">git</category>
                                 
                             
                         
@@ -1612,8 +1612,8 @@ $git branch -d temp  删除temp
         
             <item>
                 <title>2020.2.14高数笔记</title>
-                <link>https://zhangshaopu.github.io/posts/2.14%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/2.14%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
+                <link>https://www.zhangshaopu.top/posts/2.14%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/2.14%E9%AB%98%E6%95%B0%E7%AC%94%E8%AE%B0/</guid>
                 <pubDate>Fri, 14 Feb 2020 20:56:07 +0800</pubDate>
                 
                 
@@ -1650,13 +1650,13 @@ $git branch -d temp  删除temp
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -1666,7 +1666,7 @@ $git branch -d temp  删除temp
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -1676,8 +1676,8 @@ $git branch -d temp  删除temp
         
             <item>
                 <title>Ubantu</title>
-                <link>https://zhangshaopu.github.io/posts/ubantu/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/ubantu/</guid>
+                <link>https://www.zhangshaopu.top/posts/ubantu/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/ubantu/</guid>
                 <pubDate>Fri, 14 Feb 2020 14:25:56 +0800</pubDate>
                 
                 
@@ -1776,13 +1776,13 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/tech/">tech</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/ubantu/">ubantu</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/ubantu/">ubantu</category>
                                 
                             
                         
@@ -1792,7 +1792,7 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/ubantu/">ubantu</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/ubantu/">ubantu</category>
                                 
                             
                         
@@ -1802,8 +1802,8 @@ dpkg -r zip
         
             <item>
                 <title>高数中对式子的处理</title>
-                <link>https://zhangshaopu.github.io/posts/%E9%AB%98%E6%95%B0%E4%B8%AD%E5%AF%B9%E5%BC%8F%E5%AD%90%E7%9A%84%E5%A4%84%E7%90%86/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E9%AB%98%E6%95%B0%E4%B8%AD%E5%AF%B9%E5%BC%8F%E5%AD%90%E7%9A%84%E5%A4%84%E7%90%86/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E9%AB%98%E6%95%B0%E4%B8%AD%E5%AF%B9%E5%BC%8F%E5%AD%90%E7%9A%84%E5%A4%84%E7%90%86/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E9%AB%98%E6%95%B0%E4%B8%AD%E5%AF%B9%E5%BC%8F%E5%AD%90%E7%9A%84%E5%A4%84%E7%90%86/</guid>
                 <pubDate>Thu, 13 Feb 2020 17:33:06 +0800</pubDate>
                 
                 
@@ -1831,13 +1831,13 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -1847,7 +1847,7 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -1857,8 +1857,8 @@ dpkg -r zip
         
             <item>
                 <title>夹逼定理</title>
-                <link>https://zhangshaopu.github.io/posts/%E5%A4%B9%E9%80%BC%E5%AE%9A%E7%90%86/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/%E5%A4%B9%E9%80%BC%E5%AE%9A%E7%90%86/</guid>
+                <link>https://www.zhangshaopu.top/posts/%E5%A4%B9%E9%80%BC%E5%AE%9A%E7%90%86/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/%E5%A4%B9%E9%80%BC%E5%AE%9A%E7%90%86/</guid>
                 <pubDate>Thu, 13 Feb 2020 16:16:37 +0800</pubDate>
                 
                 
@@ -1884,13 +1884,13 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/study/">study</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/study/">study</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/math/">math</category>
                                 
                             
                         
@@ -1900,7 +1900,7 @@ dpkg -r zip
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/math/">math</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/math/">math</category>
                                 
                             
                         
@@ -1910,8 +1910,8 @@ dpkg -r zip
         
             <item>
                 <title>Git 操作</title>
-                <link>https://zhangshaopu.github.io/posts/git%E6%93%8D%E4%BD%9C/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/git%E6%93%8D%E4%BD%9C/</guid>
+                <link>https://www.zhangshaopu.top/posts/git%E6%93%8D%E4%BD%9C/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/git%E6%93%8D%E4%BD%9C/</guid>
                 <pubDate>Sun, 09 Feb 2020 20:56:07 +0800</pubDate>
                 
                 
@@ -1956,13 +1956,13 @@ git push origin panda
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/tech/">tech</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/git/">git</category>
                                 
                             
                         
@@ -1972,7 +1972,7 @@ git push origin panda
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/git/">git</category>
                                 
                             
                         
@@ -1982,8 +1982,8 @@ git push origin panda
         
             <item>
                 <title>Git 更换代理设置</title>
-                <link>https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%8D%A2%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/git%E6%9B%B4%E6%8D%A2%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</guid>
+                <link>https://www.zhangshaopu.top/posts/git%E6%9B%B4%E6%8D%A2%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/git%E6%9B%B4%E6%8D%A2%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/</guid>
                 <pubDate>Sun, 09 Feb 2020 20:56:07 +0800</pubDate>
                 
                 
@@ -2081,13 +2081,13 @@ git config --global --unset https.proxy
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/tech/">tech</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/tech/">tech</category>
                                 
                             
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/git/">git</category>
                                 
                             
                         
@@ -2097,7 +2097,7 @@ git config --global --unset https.proxy
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/git/">git</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/git/">git</category>
                                 
                             
                         
@@ -2107,8 +2107,8 @@ git config --global --unset https.proxy
         
             <item>
                 <title>Markdown Syntax Guide</title>
-                <link>https://zhangshaopu.github.io/posts/markdown-syntax/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/markdown-syntax/</guid>
+                <link>https://www.zhangshaopu.top/posts/markdown-syntax/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/markdown-syntax/</guid>
                 <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
                 
                 
@@ -2315,7 +2315,7 @@ count	true	String	数量</p>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/hugo/">hugo</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/hugo/">hugo</category>
                                 
                             
                         
@@ -2325,7 +2325,7 @@ count	true	String	数量</p>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/hugo/">hugo</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/hugo/">hugo</category>
                                 
                             
                         
@@ -2335,8 +2335,8 @@ count	true	String	数量</p>
         
             <item>
                 <title>Placeholder Text</title>
-                <link>https://zhangshaopu.github.io/posts/placeholder-text/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/placeholder-text/</guid>
+                <link>https://www.zhangshaopu.top/posts/placeholder-text/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/placeholder-text/</guid>
                 <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
                 
                 
@@ -2388,7 +2388,7 @@ Propoetides <strong>parte</strong>.</p>]]></description>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/categories/hugo/">hugo</category>
+                                    <category domain="https://www.zhangshaopu.top/categories/hugo/">hugo</category>
                                 
                             
                         
@@ -2398,7 +2398,7 @@ Propoetides <strong>parte</strong>.</p>]]></description>
                                 
                                 
                                 
-                                    <category domain="https://zhangshaopu.github.io/tags/hugo/">hugo</category>
+                                    <category domain="https://www.zhangshaopu.top/tags/hugo/">hugo</category>
                                 
                             
                         
@@ -2408,8 +2408,8 @@ Propoetides <strong>parte</strong>.</p>]]></description>
         
             <item>
                 <title>Emoji Support</title>
-                <link>https://zhangshaopu.github.io/posts/emoji-support/</link>
-                <guid isPermaLink="true">https://zhangshaopu.github.io/posts/emoji-support/</guid>
+                <link>https://www.zhangshaopu.top/posts/emoji-support/</link>
+                <guid isPermaLink="true">https://www.zhangshaopu.top/posts/emoji-support/</guid>
                 <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
                 
                 

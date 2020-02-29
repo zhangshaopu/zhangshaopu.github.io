@@ -8,7 +8,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>pupupu</title>
-        <link>https://zhangshaopu.github.io/en-us/</link>
+        <link>https://www.zhangshaopu.top/en-us/</link>
         <description>Blog of ztygcs in English.</description>
         <generator>Hugo 0.64.1 https://gohugo.io/</generator>
         
@@ -21,9 +21,9 @@
             <webMaster>99432741@qq.com (zsp)</webMaster>
         
         
-        <lastBuildDate>Sat, 29 Feb 2020 00:41:21 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 29 Feb 2020 23:14:30 +0800</lastBuildDate>
         
-            <atom:link rel="self" type="application/rss+xml" href="https://zhangshaopu.github.io/en-us/rss.xml" />
+            <atom:link rel="self" type="application/rss+xml" href="https://www.zhangshaopu.top/en-us/rss.xml" />
         
         
     </channel>
